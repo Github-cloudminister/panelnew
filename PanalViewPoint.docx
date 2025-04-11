@@ -1,0 +1,135 @@
+************************************************* For Developers *************************************************************
+
+
+1) Need To initial Setup in Initial-setup App in this 3 API is there
+
+    i) For Basic Initial Setup Create
+        - Permission List Create
+        - Group List Create
+        - Country List Create
+        - Language List Create
+        - SurveyEntryWelcomePageContent Create
+        - Currency List Create
+        - QuestionCategory List Create
+        - Super User Create For Django Admin
+            Email : admin@gmail.com | Password : 12345678
+            Set All Permission to SuperUser
+        - Customer Create For "toluna","zamplia","lucid" with Customer URL Code
+        - Disqo Price Setup
+        - ClientDBCountryLanguageMapping Created for All Customer(Toluna,Zamplia)
+        - LucidCountryLanguageMapping Created for Only Lucid Redirect and Lucid API Supplier
+    
+    ********** Important : Not Hit Directly in Production *********
+    ********** Takes Time (Aprox 5-10 minute) ************
+    ii) For Standard Questions Answers
+
+        - QuestionCategory,ParentQuestion,TranslatedQuestion,ParentAnswer,TranslatedAnswer Created As per Json File
+        - Json File Created From https://docs.google.com/spreadsheets/d/1H4zFPfzx9WpoICeR7rv7MqijP2zXWFwEkP4uVZOXLZ4/edit?usp=sharing
+            This Excel File Link have Self Created Question Library based On toluna,zamplia,disqo,lucid Question Library
+        - Create Zipcode Mapping For CityZip Questions
+            this is Created From _zipcode.json file Country Wise
+            this File is {Zipcode : AnswerId}
+    
+    iii) For API-Supplier Credential Store in DB
+
+        - Create Lucid and disqo API Supplier
+        - SupplierOrgAuthKeyDetails Create
+
+
+************************************************ For Users ******************************************************************************
+
+1) Employee (Project Managers/Leaders/Accountant)
+
+      ***Manager Type***                  ***Access***
+    1) Project Manager          -   Dashboard / Projects / Client Supply / Questions / Downloads
+    2) Bidding Manager          -   Dashboard / Projects
+    3) Senior Project Manager   -   Dashboard / Projects / Client Supply / Questions / Downloads
+    4) Accountant Executive     -   Dashboard / Accounting Dashboard / Customers / Accounting / Company Details
+    5) Panel Manager            -   Dashboard
+    6) Sales Executive          -   Dashboard / Projects / Downloads
+    7) Leadership               -   Admin Dashboard / Dashboard / Accounting Dashboard/ Projects / Customers / Supplier / 
+                                    Client Supply / Questions / Questions Map / Downloads / Reports / Accounting / Company Details /
+                                    Final Ids / Survey Priority / Invoice Reports
+
+2) Supplier ( User / Traffic Supply to us for Survey)
+
+    *** Types ***
+
+    1)  Manual Supplier
+    2)  API Supplier
+    3)  Router Supplier
+    4)  Panel Supplier
+    5)  AD Panel Supplier
+          -Sub Supplier
+
+    *** Supplier Create ***
+
+    Supplier Details , enable_routing , enable_hash , URL Details , Contact Details , Send Final Ids , Enable Login
+
+    *** Supplier functionalities ***
+
+    1) Manual Supplier  - Created by Managers and Added Manually in Every Survey
+
+    2) API Supplier     - Created by Managers and Added Manually
+                        - When API Supplier Add in Survey Than Same Survey Created at Supplier Side with Qulifications
+                        - 3 API Supplier We Have (Lucid / Disqo / Theorem)
+    
+    3) Router Supplier  - Created By Managers and Added Manually in Every Survey
+                        - This Supplier Enable For Route User for Multiple Times in different Survey
+    
+    4) Panel Supplier   - Enable By Manager
+                        - Survey Enable For Supplier Panel
+
+    5) AD Panel Supplier - Advertozy Panel Enable By Manager
+                         - SubSupplier Created And Enable in AD Panel for Survey
+
+3) Customer (Supply Surveys to us and We gives User / Traffic to Customer)
+
+    - Manually Create & Add Customer with Contact Details
+    - Integrated Third Party Customer/Survey Providers (Toluna/Zamplia Etc.)
+
+4) Company Details (Banking Details)
+
+    - Create/Update Currency,Invoice Prefix-Suffix,Invoice Company Details
+    - Create/Update Company Bank Details
+
+5) Questions (Library)
+
+    - There is Standard Questions Library
+    - Add Custom Questions With Question-Types/Category
+    - Download Questions Library
+
+6) Projects(Group Of Surveys/ProjectGroup)
+
+    - Create/Update/Copy Projects And Details
+    - Create/Update/Copy Multiple ProjectGroups And Securitys InSide Projects
+    - Change Stats of Project/ProjectGroup/Supplier 
+    - Add/Delete PreScreener(Questions/Answers)
+    - Add/Enable/Disable Different Types Of Multiple Supplier and Generate Survey URL
+    - Show/Download Statistics Of Project/ProjectGroup/Supplier
+    - Close Project,Reconciliation Project, Approved Supplier CPI By Project Manager
+    - Create/Approved Draft Invoice
+
+7) Final Ids(Scrub Ids)
+
+    - Add/Manage Client Accpeted/Rejected Completes
+    - Send Final Ids To Supplier For Supplier Invoice
+
+8) Accounting(Invoice/Sales/Audit)
+
+    - Create/Update/List/Download Customer Invoices
+    - Show/Approved/Paid Mark Supplier Invoices
+    - Manage Invoice Payment/Sales Commision
+    - Pending/Approved Auditing Reports For Verification Project Invoices
+
+9) Survey Priority(Router Priority)
+
+    - Add/delete Surveys For Routing Priority
+
+10) Downloads(Report Downloads)
+
+    - Download Reports Project/Surveys/Supplier/Customer Date Range Wise
+
+11) Invoice Reports(Reporting)
+
+    - Show Supplier/Client Revenue Reports

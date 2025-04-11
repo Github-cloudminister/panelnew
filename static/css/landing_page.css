@@ -1,0 +1,56 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.banner {
+    background: url('/static/images/landing_back.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1,
+p {
+    text-transform: capitalize;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.banner>div {
+    padding: 1em 3em 3em;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.head {
+    color: #ecff7e;
+}
+
+.next-button {
+    background-color: #ffffff;
+    padding: 8px 22px;
+    min-width: 150px;
+    border-radius: 10px;
+    color: #454545;
+    text-decoration: none;
+    margin: 10px;
+}
+
+@media (max-width:767px) {
+    .banner>div {
+        padding: 1em 2em;
+        margin: 1em;
+    }
+    h1,
+    p {
+        font-size: 18px;
+        font-weight: 400;
+    }
+}

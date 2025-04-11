@@ -1,0 +1,662 @@
+{% load l10n %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Invoice</title>
+    <style type="text/css">
+        @page {
+            size: letter portrait;
+            margin: 0.5cm;
+        }
+
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        /* Table Property */
+        .border-all {
+            border: 1px solid #000;
+
+        }
+
+        #table-4 tr td,
+        th {
+            border: 1px solid #2f424f;
+            padding: 7px 7px 3px 7px;
+            /* font-weight: 200;	 */
+        }
+
+        .table-tr-border {
+            border: 1px solid #2f424f;
+        }
+
+        .maintable-tr {
+            padding: 6px 0px;
+            line-height: 10px;
+        }
+
+        /* Table Property */
+
+        /* Margin and Padding Property */
+        .mz {
+            margin: 0px;
+        }
+
+        .mlz {
+            margin-left: 0px;
+        }
+
+        .mz-p2 {
+            margin: 0px;
+            padding: 2px;
+        }
+
+        .mz-p3 {
+            margin: 0px;
+            padding: 3px;
+        }
+
+        .mz-p4 {
+            margin: 0px;
+            padding: 4px;
+        }
+
+        .mz-p5 {
+            margin: 0px;
+            padding: 5px;
+        }
+
+        .pb-10 {
+            padding-bottom: 10px;
+        }
+
+        .py-3 {
+            padding: 5px 0px;
+        }
+
+        .py-5 {
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        .pxy-5-10 {
+            padding: 7px 10px 3px 10px;
+        }
+
+        .pz {
+            padding: 0px;
+        }
+
+        .plz {
+            padding-left: 0px;
+        }
+
+        .pl-5 {
+            padding-left: 5px;
+        }
+
+        .pl-10 {
+            padding-left: 10px;
+        }
+
+        .pl-20 {
+            padding-left: 20px;
+        }
+
+        .pl-30 {
+            padding-left: 30px;
+        }
+
+        .pl-35 {
+            padding-left: 35px;
+        }
+
+        .pt-5 {
+            padding-top: 5px;
+        }
+
+        .pt-10 {
+            padding-top: 10px;
+        }
+
+        .pt-20 {
+            padding-top: 20px;
+        }
+
+        .pt-30 {
+            padding-top: 30px;
+        }
+
+        .p-n8 {
+            padding: 8px;
+        }
+
+        .p-n2 {
+            padding: 2px;
+        }
+
+        .p-tableheading {
+            padding: 5px 5px 5px 10px;
+        }
+
+        /* Margin and Padding Property */
+
+        /* Line Height Property */
+        .lhz {
+            line-height: 0px;
+        }
+
+        .lh-n15 {
+            line-height: 15px;
+        }
+
+        .lh-n17 {
+            line-height: 17px;
+        }
+
+        .lh-n18 {
+            line-height: 18px;
+        }
+
+        .lh-n19 {
+            line-height: 19px;
+        }
+
+        .lh-n20 {
+            line-height: 20px;
+        }
+
+        .lh-n22 {
+            line-height: 22px;
+        }
+
+        /* Line Height Property */
+
+        /* Font Property */
+        .fw-b {
+            font-weight: bolder;
+        }
+
+        .f-i {
+            font-style: italic;
+        }
+
+        .fw-n400 {
+            font-weight: 400;
+        }
+
+        .fs-n0-5 {
+            font-size: 0.5rem;
+        }
+
+        .fs-n0-6 {
+            font-size: 0.6rem;
+        }
+
+        .fs-n0-7 {
+            font-size: 0.7rem;
+        }
+
+        .fs-n0-8 {
+            font-size: 0.8rem;
+        }
+
+        .fs-n0-9 {
+            font-size: 0.9rem;
+        }
+
+        .fs-n1-0 {
+            font-size: 1.0rem;
+        }
+
+        .fs-n1-1 {
+            font-size: 1.1rem;
+        }
+
+        .fs-n1-2 {
+            font-size: 1.2rem;
+        }
+
+        .fs-n1-3 {
+            font-size: 1.3rem;
+        }
+
+        .fs-n1-4 {
+            font-size: 1.4rem;
+        }
+
+        .fs-n1-5 {
+            font-size: 1.5rem;
+        }
+
+        /* Font Property */
+
+        /* Text Property */
+        .text-left {
+            text-align: left;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-right {
+            text-align: right;
+            padding-right: 5px;
+        }
+
+        .text-white {
+            color: #fff;
+        }
+
+        .text-pink {
+            color: #cf606d;
+        }
+
+        .text-blue {
+            color: #084263;
+        }
+
+        /* Text Property */
+
+        /* Width Property */
+        .w-n100 {
+            width: 100%;
+        }
+
+        .w-n80 {
+            width: 80%;
+        }
+
+        .w-n75 {
+            width: 75%;
+        }
+
+        .w-n60 {
+            width: 60%;
+        }
+
+        .w-n50 {
+            width: 50%;
+        }
+
+        .w-n45 {
+            width: 45%;
+        }
+
+        .w-n40 {
+            width: 40%;
+        }
+
+        .w-n35 {
+            width: 35%;
+        }
+
+        .w-n30 {
+            width: 30%;
+        }
+
+        .w-n25 {
+            width: 25%;
+        }
+
+        .w-n20 {
+            width: 20%;
+        }
+
+        .w-n15 {
+            width: 15%;
+        }
+
+        .w-n10 {
+            width: 10%;
+        }
+
+        .w-n5 {
+            width: 5%;
+        }
+
+        /* Width Property */
+
+        /* Background Color Property */
+        .bg-pink {
+            background-color: #cf606d;
+            /*#2f424f;*/
+        }
+
+        .bg-blue {
+            background-color: #084263;
+            /*#f95d71;*/
+        }
+
+        /* Background Color Property */
+    </style>
+</head>
+
+<body>
+    <div>
+        <table align="center" class="w-n100">
+            <tbody>
+
+                <tr class="table-tr-border">
+                    <td colspan="14">
+                        <table class="w-n100">
+                            <tr>
+                                <td class="w-n30 pxy-5-10">
+                                    <img src="static/images/new-logo-01.png"
+                                        />
+                                </td>
+                                <td class="w-n40 lh-n15 fs-n1-3" style="text-align: start;">
+                                    <p class="pz fw-b mlz text-blue" style="font-size: 2.3rem;">
+                                        {{company_invoice_bank_detail.company_name|upper}}
+                                    </p>
+                                </td>
+                                <td class="w-n30 pz mz">
+                                    <h2 class="lhz text-center text-pink" style="font-size: 4rem; vertical-align: top;">
+                                        INVOICE
+                                </td>
+                            </tr>
+                            <tr class="pb-10">
+                                <td style="max-width:fit-content ;"></td>
+                                <td class="w-n40 fs-n1-4 text-blue" style="vertical-align: top;text-align: start; ">
+                                    {% if company_invoice_bank_detail.company_address1 %}
+                                    <p class="mz pz lh-n20">{{company_invoice_bank_detail.company_address1|upper}}</p>
+                                    {% endif %}
+                                    {% if company_invoice_bank_detail.company_address2 %}
+                                    <p class="mz pz lh-n20">{{company_invoice_bank_detail.company_address2|upper}}</p>
+                                    {% endif %}
+                                    {% if company_invoice_bank_detail.company_city or company_invoice_bank_detail.company_state %}
+                                    <p class="mz pz lh-n20">{% if company_invoice_bank_detail.company_city %}{{company_invoice_bank_detail.company_city|upper}},{% endif %} {{company_invoice_bank_detail.company_state|upper}}</p>
+                                    {% endif %}
+                                    {% if company_invoice_bank_detail.company_country or company_invoice_bank_detail.company_zipcode %}
+                                    <p class="mz pz lh-n20">{{company_invoice_bank_detail.company_country|upper}} {% if company_invoice_bank_detail.company_zipcode %}- {{company_invoice_bank_detail.company_zipcode}}{% endif %}</p>
+                                    {% endif %}
+                                    {% if company_invoice_bank_detail.company_pan_number %}
+                                    <p class="mz pz lh-n20">PAN NO: {{company_invoice_bank_detail.company_pan_number}}</p>
+                                    {% endif %}
+                                    {% if company_invoice_bank_detail.company_tax_number %}
+                                    <p class="mz pz lh-n20">GSTIN:&nbsp;{{company_invoice_bank_detail.company_tax_number}}</p>
+                                    {% endif %}
+                                    {% if company_invoice_bank_detail.company_cin_number %}
+                                    <p class="mz pz lh-n20">CIN:&nbsp;{{company_invoice_bank_detail.company_cin_number}}</p>
+                                    {% endif %}
+                                    {% if company_invoice_bank_detail.company_email %}
+                                    <p class="mz pz lh-n20">EMAIL: {{company_invoice_bank_detail.company_email}}</p>
+                                    {% endif %}
+                                    {% if company_invoice_bank_detail.company_contact_number %}
+                                    <p class="mz pz lh-n20">PHONE NUMBER: {{company_invoice_bank_detail.company_contact_number}}</p>
+                                    {% endif %}
+                                </td>
+                                <td class="w-n30" style="margin-left: 5rem">
+                                    <table style="vertical-align: top;">
+                                        <tbody>
+                                            <tr>
+                                                <td class="pz mz">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="pz lh-n20 fs-n1-4">
+                                                    <p class="mz pz">
+                                                        <strong>Invoice #: </strong>{{invoice_number}}
+                                                    </p>
+                                                    <p class="mz pz">
+                                                        <strong>Invoice Date: </strong>{{invoice_date}}
+                                                    </p>
+                                                    <p class="mz pz">
+                                                        <strong>Due Date: </strong>{{invoice_due_date}}
+                                                    </p>
+                                                    {% if invoice_po_number %}
+                                                    <p class="mz pz">
+                                                        <strong>PO Number: </strong>{{invoice_po_number}}
+                                                    </p>
+                                                    {% endif %}
+                                                    <p class="mz pz">
+                                                        <strong>Currency: </strong>{{invoice_currency.iso}}
+                                                    </p>
+
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr class="fw-b lhz table-tr-border text-white fs-n1-5">
+                    <td colspan=7 class="w-n50 bg-blue">
+                        <p class="p-n8">Bill To</p>
+                    </td>
+                    <td colspan=7 class="w-n50 bg-pink">
+                        <p class="p-n8">Ship To</p>
+                    </td>
+                </tr>
+                <tr class="p2 table-tr-border pb-10">
+                    <td colspan=7 class="w-n50 pl-10 pt-5 fs-n1-4" style="vertical-align: top;">
+                        <p class="mz-p2 lh-n15"><strong>{{invoice_customer}}</strong></p>
+
+                        {% for cust_address in customer_address.address %}
+                            {% if not cust_address %}
+                            <p class="mz-p2 lh-n15"></p>
+                            {% else %}
+                            <p class="mz-p2 lh-n15">{{cust_address}},</p>
+                            {% endif %}
+                        {% endfor %}
+                        <p class="mz-p2 lh-n15">{{customer_address.city}}, {{customer_address.state}} -
+                            {{customer_address.zip_code}}</p>
+                        <p class="mz-p2 lh-n15">{{customer_address.country}} </p>
+                        {% if not TAXnumber %}
+                            <p class="mz-p2 lh-n15"></p>
+                        {% else %}
+                            <p class="mz-p2 lh-n15">{% if invoice_currency.iso == 'INR' %} GSTIN {% else %}TAX Number {% endif %} {{TAXnumber}}</p>
+                        {% endif %}
+                        <p class="mz-p2 lh-n15">Place Of Supply:&nbsp;<strong>{{customer_address.state}}</strong></p>
+                    </td>
+                    <td colspan=7 class="w-n50 pl-10 pt-10 fs-n1-4" style="vertical-align: top;">
+                        {% if invoice_ship_to_address_enable %}
+
+                            {% for ship_address in shiping_address.address %}
+                                {% if not ship_address %}
+                                <p class="mz-p2 lh-n15"></p>
+                                {% else %}
+                                <p class="mz-p2 lh-n15">{{ship_address}},</p>
+                                {% endif %}
+                            {% endfor %}
+                            <p class="mz-p2 lh-n15">{{shiping_address.city}}, {{shiping_address.state}} -
+                                {{shiping_address.zip_code}} </p>
+                            <p class="mz-p2 lh-n15">{{shiping_address.country}}</p>
+                            {% if not TAXnumber %}
+                            <p class="mz-p2 lh-n15"></p>
+                            {% else %}
+                            <p class="mz-p2 lh-n15">{% if invoice_currency.iso == 'INR' %} GSTIN {% else %}TAX Number {% endif %} {{TAXnumber}}</p>
+                            {% endif %}
+                        {% endif %}
+                    </td>
+                </tr>
+
+                
+                <!-- FROM HERE ON, INVOICEROWS TABLE STARTS IN TABULAR FORM -->
+                <table>
+                <tr class="text-center bg-pink text-white table-tr-border lhz fw-b py-5">
+                    <td class="w-n5 fs-n1-5">NO</td>
+                    <td colspan="{% if invoice_currency.iso == 'INR' %}6{% else %}7{% endif %}"
+                        class="{% if invoice_currency.iso == 'INR' %}w-n35{% else %}w-n45{% endif %} fs-n1-5">Item &
+                        Description</td>
+                    {% if invoice_currency.iso == 'INR' %}<td class="w-n10 fs-n1-5">SAC</td>{% endif %}
+                    {% if not invoice_po_number %}
+                    <td class="w-n25 fs-n1-5">PO #</td>
+                    {% endif %}
+                    <td class="w-n10 fs-n1-5">QTY</td>
+                    <td colspan="2" class="w-n10 fs-n1-5">Rate</td>
+                    {% if not invoice_po_number %}
+                    <td colspan="2" class="w-n30 fs-n1-5">Amount</td>
+                    {% else %}
+                    <td colspan="3" class="w-n30 fs-n1-5">Amount</td>
+                    {% endif %}
+                </tr>
+                {% for invoice in invoice_rows %}
+                <tr class="maintable-tr table-tr-border fw-b">
+                    <td class="w-n5 fs-n1-5 text-center">{{forloop.counter}}</td>
+                    {% if invoice.row_description == "" %}
+                        <td colspan="{% if invoice_currency.iso == 'INR' %}6{% else %}7{% endif %}"
+                            class="{% if invoice_currency.iso == 'INR' %}w-n35{% else %}w-n45{% endif %} fs-n1-5 pl-5">N/A
+                        </td>
+                    {% else %}
+                        <td colspan="{% if invoice_currency.iso == 'INR' %}6{% else %}7{% endif %}"
+                            class="{% if invoice_currency.iso == 'INR' %}w-n35{% else %}w-n45{% endif %} fs-n1-5 pl-5 text-left">
+                            {{invoice.row_description}}
+                        </td>
+                    {% endif %}
+                    {% if invoice_currency.iso == 'INR' %}
+                    <td class="w-n10 fs-n1-5 text-center">998371</td>
+                    {% endif %}
+                    {% if not invoice_po_number %}
+                    <td class="w-n25 fs-n1-5 text-center">
+                        {{invoice.row_po_number}}
+                    </td>
+                    {% endif %}
+                    <td class="w-n10 fs-n1-5 text-center">{{invoice.row_completes}}</td>
+                    <td colspan="2" class="w-n10 fs-n1-5 text-center">{{invoice.row_cpi|floatformat:"2"}}</td>
+                    {% if not invoice_po_number %}
+                    <td colspan="2" class="w-n30 fs-n1-5 text-center">
+                        {{invoice.row_total_amount|localize|floatformat:"2"}}
+                    </td>
+                    {% else %}
+                    <td colspan="3" class="w-n30 fs-n1-5 text-center">
+                        {{invoice.row_total_amount|localize|floatformat:"2"}}
+                    </td>
+                    {% endif %}
+                </tr>
+                {% endfor %}
+            </table>
+                <!-- UNTIL HERE, INVOICEROWS TABLE RUNS IN TABULAR FORM -->
+
+                <table>
+                <tr class="fs-n1-4 pt-10">
+                    <td colspan="6" class="w-n50 pl-10" style="vertical-align: top;">
+
+                        <p class="mz-p2 fw-b">
+                            All payments to be made in favor of - <br>"{{company_invoice_bank_detail.company_name|upper}}"
+                        </p>
+                        <div>
+                            <p class="mz-p2 fw-b">Account Number: {{company_invoice_bank_detail.account_number}}</p>
+                            {% if company_invoice_bank_detail.ifsc_code %}
+                            <p class="mz-p2 fw-b">IFS Code: {{company_invoice_bank_detail.ifsc_code}}</p>
+                            {% endif %}
+                            <p class="mz-p2 fw-b">Bank Name: {{company_invoice_bank_detail.bank_name}}</p>
+                            <p class="mz-p2 fw-b">Bank Address: {{company_invoice_bank_detail.bank_address|linebreaksbr}}</p>
+                            <!-- <p class="mz-p2 fw-b">Shop No 3, Tryksha Desire, Ahmedabad</p> -->
+                            {% if company_invoice_bank_detail.swift_code %}
+                            <p class="mz-p2 fw-b">Swift Code: {{company_invoice_bank_detail.swift_code}}</p>
+                            {% endif %}
+                            {% if company_invoice_bank_detail.company_iban_number %}
+                            <p class="mz-p2 fw-b">IBAN No: {{company_invoice_bank_detail.company_iban_number}}</p>
+                            {% endif %}
+                            {% if company_invoice_bank_detail.company_routing_number %}
+                            <p class="mz-p2 fw-b">Routing No: {{company_invoice_bank_detail.company_routing_number}}</p>
+                            {% endif %}
+                        </div>
+                    </td>
+                    <td colspan="7" class="w-n100 pl-10" style="vertical-align: top;">
+
+                        <table id="table-4" class="p-n8 fw-b">
+                            <tbody>
+                                <tr>
+                                    <td>Sub Total (in {{invoice_currency.iso}})</td>
+                                    <td class="text-right">{{invoice_subtotal_amount|floatformat:"2"}}</td>
+                                </tr>
+                                {% if discount %}
+                                <tr>
+                                    <td>Discount (in %)</td>
+                                    <td class="text-right">{{discount|floatformat:"2"}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Sub Total After Discount (in {{invoice_currency.iso}})</td>
+                                    <td class="text-right">{{subtotal_after_discount|floatformat:"2"}}</td>
+                                </tr>
+                                {% endif %}
+                                {% if tax_choice == '2' %}
+                                <tr>
+                                    <td>IGST (18%) on {{invoice_subtotal_amount|floatformat:"2"}}</td>
+                                    <td class="text-right">{{invoice_IGST_value|floatformat:"2"}}</td>
+                                </tr>
+                                {% elif tax_choice == '3' %}
+                                <tr>
+                                    <td>CGST (9%) on {{invoice_subtotal_amount|floatformat:"2"}}</td>
+                                    <td class="text-right">{{invoice_CGST_value|floatformat:"2"}}</td>
+                                </tr>
+                                <tr>
+                                    <td>SGST (9%) on {{invoice_subtotal_amount|floatformat:"2"}}</td>
+                                    <td class="text-right">{{invoice_SGST_value|floatformat:"2"}}</td>
+                                </tr>
+                                {% endif %}
+                                {% if invoice_currency.iso == 'INR' %}
+                                <tr>
+                                    <td>Total (in {{invoice_currency.iso}})</td>
+                                    <td class="text-right">{{invoice_total_amount|floatformat:"2"}}</td>
+                                </tr>
+                                <tr class="bg-pink text-white">
+                                    <td>Balance Due (in {{invoice_currency.iso}})</td>
+                                    <td class="text-right">{{invoice_total_amount|floatformat:"2"}}</td>
+                                </tr>
+                                {% else %}
+                                <tr>
+                                    <td>Total (in {{invoice_currency.iso}})</td>
+                                    <td class="text-right">{{invoice_total_amount|floatformat:"2"}}</td>
+                                </tr>
+                                <tr class="bg-pink text-white">
+                                    <td>Balance Due (in {{invoice_currency.iso}})</td>
+                                    <td class="text-right">{{invoice_total_amount|floatformat:"2"}}</td>
+                                </tr>
+                                {% endif %}
+                                {% if invoice_currency.iso == 'INR' and invoice_show_conversion_rate %}
+                                <tr class="bg-pink text-white">
+                                    <td>Conversion Rate</td>
+                                    <td class="text-right">{{invoice_conversion_rate|floatformat:"2"}}</td>
+                                </tr>
+                                <tr class="bg-pink text-white">
+                                    <td>Balance Due (in USD)</td>
+                                    <td class="text-right">{{invoice_total_amount_in_USD|floatformat:"2"}}</td>
+                                </tr>
+                                {% endif %}
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="fs-n1-4 pt-10">
+                    <td colspan="{% if invoice_show_stamp %}12{% else %}12{% endif %}" class="w-n50 pl-10"
+                        style="vertical-align: top;">
+                        <p class="mz-p2">Thanks for your business.</p>
+                        {% if invoice_description %}
+                        <p class="mz-p2">{{invoice_description}}</p>
+                        {% endif %}
+                        <p class="mz-p2">We declare that this invoice shows the actual price of the services rendered and that all particulars are true and correct.</p>
+                        {% if invoice_currency.iso != 'INR' and company_invoice_bank_detail.company_country_code == 'IN' %}
+                        <p class="mz-p2">SUPPLY IS MEANT FOR EXPORT UNDER LETTER OF UNDERTAKING WITHOUT PAYMENT OF IGST.</p>
+                        {% endif %}
+                    </td>
+                    {% if False %}
+                    <td colspan="6" class="w-n50 pl-10" style="vertical-align: top;">
+                        <table class="p-n8">
+                            <tbody>
+                                <tr>
+                                    <td style="text-align: center;">
+
+                                        <img src="data:image/jpeg;base64,/9j/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQECAgICAgICAgICAgMDAwMDAwMDAwMBAQEBAQEBAgEBAgICAQICAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA//dAAQAHP/uAA5BZG9iZQBkwAAAAAH/wAARCACoANkDABEAAREBAhEB/8QASwABAQAAAAAAAAAAAAAAAAAAAAoBAQAAAAAAAAAAAAAAAAAAAAAQAQAAAAAAAAAAAAAAAAAAAAARAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwAAARECEQA/AL+AAAAAAAAAAAAAAAAAAAAAAAAAAAAf/9C/gAAAAAAAAAAAAAAAAAAAAAAAAAAAH//Rv4AAAAAAAAAAAAAAAAAAAAAAAAAAAB//0r+AAAAAAAAAAAAAAAAAAAAAAAAAAAAf/9O/gAAAAAAAAAAAAAAAAAAAAAAAAAAAH//Uv4AAAAAAAAAAAAAAAAAAAAAAAAAAAB//1b+AAAAAAAAAAAAAAAAAAAAAAAAAAAAf/9a/gAAAAAAAAAAAAAAAAAAAAAAAAAAAH//Xv4AAAAAAAAAAAAAAAAAAAAAAAAAAAB//0L+AAAAAAAAAAAAAAAAAAAAAAAAAAAAf/9G/gAAAAAAAAAAAAAAAAAAAAAAAAAAAH//Sv4AAAAAAAAAAAAAAAAAAAAAAAAAAAB//07+AAAAAAAAAAAAAAAAAAAAAAAAAAAAf/9S/gAAAAAAAAAAAAAAAAAAAAAAAAAAAH//Vv4AAAAAAAAAAAAAAAAAAAAAAAAAAAB//1r+AAAAAAAAAAAAAAAAAAAAAAAAAAAAf/9e/gAAAAAAAAAAAAAAAAAAAAAAAAAAAH//Qv4AAAAAAAAAAAAAAAAAAAAAAAAAAAB//0b+AAAAAAAAAAAAAAAAAAAAAAAAAAAAf/9K/gAAAAAAAAAAAAAAAAAAAAAAAAAAAH//Tv4AAAAAAAAAAAAAAAAAAAAAAAAAAAB//2Q=="
+                                            alt="">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    {% endif %}
+                </tr>
+            </table>
+
+</body>
+</html>

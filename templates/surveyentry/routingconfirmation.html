@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Survey</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/gif" sizes="16x16" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'images/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'images/site.webmanifest' %}">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="{% static 'css/survey_page.css' %}" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="{% static 'js/survey_page.js' %}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <script src="https://www.google.com/jsapi" type="text/javascript"></script>
+</head>
+
+<body>
+    <section class="banner">
+        <div class="question">
+            {% if messages %}
+            {% for message in messages %}
+            <div class="alert {{message.tags}} alert-dismissible fade show" role="alert"
+                style="text-align: left !important;">
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                {{message}}
+            </div>
+            {% endfor %}
+            {% endif %}
+            <form method="post">
+                {% csrf_token %}
+                <div style="padding: 10px 10px; font-weight: 400; text-align: left; font-size: 18px; color: #ffffff;">
+                    <p style="color: white;">We have another SURVEY available for you and you will be rewarded for the
+                        same if you agree to participate in that.
+
+                    </p>
+                </div>
+                <div class="answeroptions">
+                    <input type="radio" id="agree" name="routingconfirmation" value="yes">
+                    <label style="color: white;" for="agree">Yes, I would like to participate</label><br>
+                </div>
+                <div class="answeroptions">
+                    <input type="radio" id="disagree" name="routingconfirmation" value="no">
+                    <label style="color: white;" for="disagree">No, I do not want to participate</label>
+                </div>
+                <br>
+                <!-- <input type="submit" value="Submit" style="padding: 9px 32px;"> -->
+                <div class="next_button">
+                    <a id="next-link"><button class="next-button" type="submit">Submit <i class="fa fa-arrow-right"
+                                aria-hidden="true"></i></button></a>
+                </div>
+            </form>
+        </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

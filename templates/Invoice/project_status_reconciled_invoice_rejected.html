@@ -1,0 +1,66 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office"
+	xmlns:v="urn:schemas-microsoft-com:vml">
+
+<head>
+	<!--[if gte mso 9]><xml><o:OfficeDocumentSettings><o:AllowPNG/><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml><![endif]-->
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<meta content="width=device-width" name="viewport" />
+	<!--[if !mso]><!-->
+	<meta content="IE=edge" http-equiv="X-UA-Compatible" />
+	<!--<![endif]-->
+	<title></title>
+	<!--[if !mso]><!-->
+	<!--<![endif]-->
+	<style type="text/css">
+		body {
+			margin: 0;
+			padding: 0;
+		}
+
+		table,
+		th,
+		td,
+		tr {
+			vertical-align: top;
+			border: 1px solid black;;
+			border-collapse: collapse;
+		}
+
+		* {
+			line-height: inherit;
+		}
+
+		a[x-apple-data-detectors=true] {
+			color: inherit !important;
+			text-decoration: none !important;
+		}
+	</style>
+	
+</head>
+
+<body class="clean-body" style="margin: 0; padding: 0; background-color: #FFFFFF;">
+	
+	<div>
+		<p>
+			Hi {{project.project_manager.first_name}} {{project.project_manager.last_name}},
+		</p>
+		<p>
+			Project Invoice for Project number {{project.project_number}} has been rejected by {{request.user.first_name}} {{request.user.last_name}} due to following reason:
+            <br>
+            <br>
+            {{project.draftinvoice.approval_note}}
+		</p>
+	</div>
+
+		<br>
+		Thanks,
+		<br>
+		Accounts Team
+
+
+</body>
+
+</html>

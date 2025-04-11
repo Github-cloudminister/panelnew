@@ -1,0 +1,420 @@
+{% load l10n %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Invoice</title>
+    <style type="text/css">
+        @page {
+            size: letter portrait;
+            margin: 0.5cm;
+        }
+
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        /* Table Property */
+        .border-all {
+            border: 1px solid #000;
+
+        }
+
+        #table-4 tr td,
+        th {
+            border: 1px solid #2f424f;
+            padding: 7px 7px 3px 7px;
+            /* font-weight: 200;	 */
+        }
+
+        .table-tr-border {
+            border: 1px solid #2f424f;
+        }
+
+        .maintable-tr {
+            padding: 6px 0px;
+            line-height: 10px;
+        }
+
+        /* Table Property */
+
+        /* Margin and Padding Property */
+        .mz {
+            margin: 0px;
+        }
+
+        .mlz {
+            margin-left: 0px;
+        }
+
+        .mz-p2 {
+            margin: 0px;
+            padding: 2px;
+        }
+
+        .mz-p3 {
+            margin: 0px;
+            padding: 3px;
+        }
+
+        .mz-p4 {
+            margin: 0px;
+            padding: 4px;
+        }
+
+        .mz-p5 {
+            margin: 0px;
+            padding: 5px;
+        }
+
+        .pb-10 {
+            padding-bottom: 10px;
+        }
+
+        .py-3 {
+            padding: 5px 0px;
+        }
+
+        .py-5 {
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        .pxy-5-10 {
+            padding: 7px 10px 3px 10px;
+        }
+
+        .pz {
+            padding: 0px;
+        }
+
+        .plz {
+            padding-left: 0px;
+        }
+
+        .pl-5 {
+            padding-left: 5px;
+        }
+
+        .pl-10 {
+            padding-left: 10px;
+        }
+
+        .pl-20 {
+            padding-left: 20px;
+        }
+
+        .pl-30 {
+            padding-left: 30px;
+        }
+
+        .pl-35 {
+            padding-left: 35px;
+        }
+
+        .pt-5 {
+            padding-top: 5px;
+        }
+
+        .pt-10 {
+            padding-top: 10px;
+        }
+
+        .pt-20 {
+            padding-top: 20px;
+        }
+
+        .pt-30 {
+            padding-top: 30px;
+        }
+
+        .p-n8 {
+            padding: 8px;
+        }
+
+        .p-n2 {
+            padding: 2px;
+        }
+
+        .p-tableheading {
+            padding: 5px 5px 5px 10px;
+        }
+
+        /* Margin and Padding Property */
+
+        /* Line Height Property */
+        .lhz {
+            line-height: 0px;
+        }
+
+        .lh-n15 {
+            line-height: 15px;
+        }
+
+        .lh-n17 {
+            line-height: 17px;
+        }
+
+        .lh-n18 {
+            line-height: 18px;
+        }
+
+        .lh-n19 {
+            line-height: 19px;
+        }
+
+        .lh-n20 {
+            line-height: 20px;
+        }
+
+        .lh-n22 {
+            line-height: 22px;
+        }
+
+        /* Line Height Property */
+
+        /* Font Property */
+        .fw-b {
+            font-weight: bolder;
+        }
+
+        .f-i {
+            font-style: italic;
+        }
+
+        .fw-n400 {
+            font-weight: 400;
+        }
+
+        .fs-n0-5 {
+            font-size: 0.5rem;
+        }
+
+        .fs-n0-6 {
+            font-size: 0.6rem;
+        }
+
+        .fs-n0-7 {
+            font-size: 0.7rem;
+        }
+
+        .fs-n0-8 {
+            font-size: 0.8rem;
+        }
+
+        .fs-n0-9 {
+            font-size: 0.9rem;
+        }
+
+        .fs-n1-0 {
+            font-size: 1.0rem;
+        }
+
+        .fs-n1-1 {
+            font-size: 1.1rem;
+        }
+
+        .fs-n1-2 {
+            font-size: 1.2rem;
+        }
+
+        .fs-n1-3 {
+            font-size: 1.3rem;
+        }
+
+        .fs-n1-4 {
+            font-size: 1.4rem;
+        }
+
+        .fs-n1-5 {
+            font-size: 1.5rem;
+        }
+
+        /* Font Property */
+
+        /* Text Property */
+        .text-left {
+            text-align: left;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-right {
+            text-align: right;
+            padding-right: 5px;
+        }
+
+        .text-white {
+            color: #fff;
+        }
+
+        .text-pink {
+            color: #cf606d;
+        }
+
+        .text-blue {
+            color: #084263;
+        }
+
+        /* Text Property */
+
+        /* Width Property */
+        .w-n100 {
+            width: 100%;
+        }
+
+        .w-n80 {
+            width: 80%;
+        }
+
+        .w-n75 {
+            width: 75%;
+        }
+
+        .w-n60 {
+            width: 60%;
+        }
+
+        .w-n50 {
+            width: 50%;
+        }
+
+        .w-n45 {
+            width: 45%;
+        }
+
+        .w-n40 {
+            width: 40%;
+        }
+
+        .w-n35 {
+            width: 35%;
+        }
+
+        .w-n30 {
+            width: 30%;
+        }
+
+        .w-n25 {
+            width: 25%;
+        }
+
+        .w-n20 {
+            width: 20%;
+        }
+
+        .w-n15 {
+            width: 15%;
+        }
+
+        .w-n10 {
+            width: 10%;
+        }
+
+        .w-n5 {
+            width: 5%;
+        }
+
+        /* Width Property */
+
+        /* Background Color Property */
+        .bg-pink {
+            background-color: #cf606d;
+            /*#2f424f;*/
+        }
+
+        .bg-blue {
+            background-color: #084263;
+            /*#f95d71;*/
+        }
+
+        /* Background Color Property */
+    </style>
+</head>
+
+<body>
+    <div>
+        <table align="center" class="w-n100">
+            <tbody>
+
+                <tr class="table-tr-border">
+                    <td colspan="14">
+                        <table class="w-n100">
+                            <tr>
+                                <td class="w-n30 pxy-5-10">
+                                    <img src="static/images/new-logo-01.png"
+                                        />
+                                </td>
+                                <td class="w-n30 pz mz">
+                                    <h2 class="lhz text-center text-pink" style="font-size: 4rem; vertical-align: top;">
+                                        INVOICE
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                
+                <!-- FROM HERE ON, INVOICEROWS TABLE STARTS IN TABULAR FORM -->
+                <table>
+                <tr class="text-center bg-pink text-white table-tr-border lhz fw-b py-5">
+                    <td class="w-n5 fs-n1-5">NO</td>
+                    <td colspan="5"
+                        class="w-n35 fs-n1-5 pl-5 text-left">Invoice No</td>
+                        <td colspan="{% if invoice_currency == 'INR' %}6{% else %}7{% endif %}"
+                        class="{% if invoice_currency == 'INR' %}w-n35{% else %}w-n45{% endif %} fs-n1-5">Item &
+                        Description</td>
+                    {% if not invoice_po_number %}
+                    <td class="w-n25 fs-n1-5">PO #</td>
+                    {% endif %}
+                    <td class="w-n10 fs-n1-5">QTY</td>
+                    <td colspan="2" class="w-n10 fs-n1-5">Rate</td>
+                    {% if not invoice_po_number %}
+                    <td colspan="4" class="w-n35 fs-n1-5">Total</td>
+                    {% else %}
+                    <td colspan="4" class="w-n35 fs-n1-5">Total</td>
+                    {% endif %}
+                </tr>
+                {% for invoice in invoice_rows %}
+                <tr class="maintable-tr table-tr-border fw-b">
+                    <td class="w-n5 fs-n1-5 text-center">{{forloop.counter}}</td>
+                    <td colspan="5"
+                            class="w-n20 fs-n1-5 pl-5 text-left">
+                            {{invoice.invoice_number}}
+                        </td>
+                    {% if invoice.row_description == "" %}
+                        <td colspan="{% if invoice.invoice_currency == 'INR' %}6{% else %}7{% endif %}"
+                            class="{% if invoice.invoice_currency == 'INR' %}w-n35{% else %}w-n45{% endif %} fs-n1-5 pl-5">N/A
+                        </td>
+                    {% else %}
+                        <td colspan="{% if invoice.invoice_currency == 'INR' %}6{% else %}7{% endif %}"
+                            class="{% if invoice.invoice_currency == 'INR' %}w-n35{% else %}w-n45{% endif %} fs-n1-5 pl-5 text-left">
+                            {{invoice.row_description}}
+                        </td>
+                    {% endif %}
+                    {% if not invoice_po_number %}
+                    <td class="w-n20 fs-n1-5 text-center">
+                        {{invoice.row_po_number}}
+                    </td>
+                    {% endif %}
+                    <td class="w-n10 fs-n1-5 text-center">{{invoice.row_completes}}</td>
+                    <td colspan="2" class="w-n10 fs-n1-5 text-center">{{invoice.row_cpi|floatformat:"2"}}</td>
+                    {% if not invoice_po_number %}
+                    <td colspan="4" class="w-n35 fs-n1-5 text-center">
+                        {{invoice.invoice_currency}} {{invoice.row_total_amount|localize|floatformat:"2"}}
+                    </td>
+                    {% else %}
+                    <td colspan="3" class="w-n30 fs-n1-5 text-center">
+                        {{invoice.invoice_currency}} {{invoice.row_total_amount|localize|floatformat:"2"}}
+                    </td>
+                    {% endif %}
+                </tr>
+                {% endfor %}
+            </table>
+
+</body>
+</html>

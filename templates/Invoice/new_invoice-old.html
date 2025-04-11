@@ -1,0 +1,409 @@
+{% load l10n %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Invoice</title>
+    <style type="text/css">
+        @page{
+            size: letter portrait;
+            margin: 0.5cm;
+        }
+
+        /* Table Property */
+        #table-4 tr td, th {
+            border: 1px solid #000;
+            padding: 6px 7px;	
+            /* font-weight: 200;	 */
+        }
+        /* Table Property */
+        
+        /* Margin and Padding Property */
+        .mz{
+            margin: 0px;
+        }
+        .mlz{
+            margin-left: 0px;
+        }
+        .mz-p2{
+            margin: 0px;
+            padding: 2px;
+        }
+        .mz-p3{
+            margin: 0px;
+            padding: 3px;
+        }
+        .mz-p4{
+            margin: 0px;
+            padding: 4px;
+        }
+        .mz-p5{
+            margin: 0px;
+            padding: 5px;
+        }
+        .pz{
+            padding: 0px;
+        }
+        .plz{
+            padding-left: 0px;
+        }
+        .p-n8{
+            padding: 8px;
+        }
+        .p-n2{
+            padding: 2px;
+        }
+        /* Margin and Padding Property */
+
+        /* Line Height Property */
+        .lhz{
+            line-height: 0px;
+        }
+        .lh-n15{
+            line-height: 15px;
+        }
+        .lh-n17{
+            line-height: 17px;
+        }
+        .lh-n18{
+            line-height: 18px;
+        }
+        .lh-n19{
+            line-height: 19px;
+        }
+        .lh-n20{
+            line-height: 20px;
+        }
+        /* Line Height Property */
+
+        /* Font Property */
+        .fw-b{
+            font-weight: bolder;
+        }
+        .f-i{
+            font-style: italic;
+        }
+        .fw-n400{
+            font-weight: 400;
+        }
+        .fs-n1-5{
+            font-size: 1.5rem;
+        }
+        .fs-n1-2{
+            font-size: 1.2rem;
+        }
+        .fs-n1-3{
+            font-size: 1.3rem;
+        }
+        .fs-n1-4{
+            font-size: 1.4rem;
+        }
+        .fs-n1-5{
+            font-size: 1.5rem;
+        }
+        /* Font Property */
+
+        /* Text Property */
+        .text-left{
+            text-align: left;
+        }
+        .text-center{
+            text-align: center;
+        }
+        .text-right{
+            text-align: right;
+        }
+        .text-white{
+            color: #fff;
+        }
+        .text-pink{
+            color: #cf606d;
+        }
+        .text-blue{
+            color: #084263;
+        }
+        /* Text Property */
+
+        /* Width Property */
+        .w-n100{
+            width: 100%;
+        }
+        .w-n50{
+            width: 50%;
+        }
+        .w-n45{
+            width: 45%;
+        }
+        .w-n40{
+            width: 40%;
+        }
+        .w-n35{
+            width: 35%;
+        }
+        .w-n30{
+            width: 30%;
+        }
+        .w-n25{
+            width: 25%;
+        }
+        /* Width Property */
+
+        /* Background Color Property */
+        .bg-pink{
+            background-color: #cf606d;
+        }
+        .bg-blue{
+            background-color: #084263;
+        }
+        /* Background Color Property */
+        
+        
+    </style>
+</head>
+
+<body>
+    <div>
+        <table style="border:1px solid #000;">
+            <tbody>
+                <tr>
+                    <td class="mz pz lhz">
+                        <div>
+                            <table class="p-n8">
+                                <tbody>
+                                    <tr>
+                                        <td width="25%" style="vertical-align: top;">
+                                            <img src="data:image/png;base64,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" style="padding: 10px;" />
+                                        </td>
+                                        <td class="w-n45 lh-n15 fs-n1-3 text-blue">
+                                            
+                                            <p class="pz fw-b mlz" style="font-size: 2.3rem; ">PANEL VIEWPOINT PRIVATE LIMITED</p>
+                                            <p class="mz pz">1008, NORTH PLAZA</p>
+                                            <p class="mz pz">NEAR 4D SQUARE MALL, MOTERA</p>
+                                            <p class="mz pz">AHMEDABAD, GUJARAT</p>
+                                            <p class="mz pz">INDIA - 380005</p>
+                                            <p class="mz pz">GSTIN&nbsp;24AALCP7884M1ZJ</p>
+                                            <p class="mz pz">CIN:&nbsp;U74999GJ2021PTC120317</p>
+                                            <p class="mz pz">EMAIL: accounts@panelviewpoint.com</p>
+                                            <p class="mz pz">PHONE NUMBER: +91 7597 44 66 44</p>
+                                        </td>
+                                        <td class="w-n30">
+                                            <div>
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="pz mz">
+                                                                <h2 class="lhz text-center text-pink" style="font-size: 4rem; vertical-align: top;">INVOICE<br></h2>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="pz lh-n20 fs-n1-4">
+                                                                <p class="mz pz">
+                                                                    <strong>Invoice #: </strong>{{invoice_number}}
+                                                                </p>
+                                                                <p class="mz pz">
+                                                                    <strong>Invoice Date: </strong>{{invoice_date}}
+                                                                </p>
+                                                                <p class="mz pz">
+                                                                    <strong>Due Date: </strong>{{invoice_due_date}}
+                                                                </p>
+                                                                <p class="mz pz">
+                                                                    <strong>PO No: </strong>{{invoice_po_number}}
+                                                                </p>
+                                                                <p class="mz pz">
+                                                                    <strong>Currency: </strong>{{invoice_currency.iso}}
+                                                                </p>
+                                                                    
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mz pz lhz">
+                        <div>
+                            <table class="p-n8">
+                                <tbody>
+                                    <tr class="fw-b">
+                                        <td class="w-n50 text-white fs-n1-5 bg-blue">
+                                            <p class="mz pz">Bill To</p>
+                                        </td>
+                                        <td class="w-n50 text-white fs-n1-5 bg-pink">
+                                            <p class="mz pz">Ship To</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mz pz lhz">
+                        <div>
+                            <table class="p-n8 fs-n1-4 lh-n15">
+                                <tbody>
+                                    <tr class="p2">
+                                        <td class="w-n50" style="vertical-align: top;">
+                                            <p class="mz-p2"><strong>{{invoice_customer}}</strong></p>
+                                            
+                                            {% for cust_address in customer_address.address %}
+                                            <p class="mz-p2">{{cust_address}},</p>
+                                            {% endfor %}
+                                            <p class="mz-p2">{{customer_address.city}}, {{customer_address.state}} - {{customer_address.zip_code}}</p>
+                                            <p class="mz-p2">{{customer_address.country}} </p>
+                                            <p class="mz-p2">{% if invoice_currency.iso == 'INR' %} GSTIN {% else%}TAX Number {% endif %} {{TAXnumber}}</p>
+                                            <p class="mz-p2">Place Of Supply:&nbsp;<strong>{{customer_address.state}}</strong></p>
+                                        </td>
+                                        <td class="w-n50" style="vertical-align: top;">
+                                            {% if invoice_ship_to_address_enable %}
+                                            
+                                            {% for ship_address in shiping_address.address %}
+                                            <p class="mz-p2">{{ship_address}},</p>
+                                            {% endfor %}
+                                            <p class="mz-p2">{{shiping_address.city}}, {{shiping_address.state}} - {{shiping_address.zip_code}}  </p>
+                                            <p class="mz-p2">{{shiping_address.country}}</p>
+                                            <p class="mz-p2">{% if invoice_currency.iso == 'INR' %} GSTIN {% else%}TAX Number {% endif %} {{TAXnumber}}</p>
+                                            {% endif %}
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td class="mx pz lhz">
+                        <div>
+                            <table id="table-4" class="fw-b fs-n1-3">
+                                <thead class="text-white">
+                                    <tr class="text-center bg-pink">
+                                        <td class="w-n100">Item & Description</td>
+                                        {% if invoice_currency.iso == 'INR' %}<td class="w-n30">SAC</td>{% endif %}
+                                        <td class="w-n30">QTY</td>
+                                        <td class="w-n30">Rate</td>
+                                        <td class="w-n40">Amount (in {{invoice_currency.iso}})</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for invoice in invoice_rows %}
+                                    <tr>
+                                        {% if invoice.row_description == "" %}
+                                        <td class="w-n100">N/A</td>
+                                        {% else %}
+                                        <td class="w-n100">{{invoice.row_description}}</td>
+                                        {% endif %}
+                                        {% if invoice_currency.iso == 'INR' %}<td class="w-n30 text-center">998371</td>{% endif %}
+                                        <td class="w-n30 text-center">{{invoice.row_completes}}</td>
+                                        <td class="w-n30 text-right">{{invoice.row_cpi|floatformat:"2"}}</td>
+                                        <td class=" w-n40 text-right">{{invoice.row_total_amount|localize|floatformat:"2"}}</td>
+                                    </tr>
+                                    {% endfor %}
+                                    
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mx pz lhz">
+                        <div>
+                            <table class="p-n8 fs-n1-4">
+                                <tbody>
+                                    <tr>
+                                        <td class="w-n50 lh-n20">
+                                            <p class="mz-p2">Thanks for your business.<br></p>
+                                            <p class="mz-p2">We declare that this invoice shows the actual price of the services rendered and that all particulars are true and correct.<br></p>
+                                            {% if invoice_description %}
+                                            <p class="mz-p2">{{invoice_description}}<br></p>
+                                            {% endif %}
+                                            <p class="mz-p2 fw-b">All payments to be made in favor of PANEL VIEWPOINT PRIVATE LIMITED</p>
+                                            <div>
+                                                <p class="mz-p2 fw-b">Account Number: 10073962991</p>
+                                                <p class="mz-p2 fw-b">IFS Code: IDFB0040308</p>
+                                                <p class="mz-p2 fw-b">Bank Name: IDFC FIRST BANK LTD</p>
+                                                <p class="mz-p2 fw-b">Bank Address: Chandkheda Branch, GR Floor, </p>
+                                                <p class="mz-p2 fw-b">Shop No 3, Tryksha Desire, Ahmedabad</p>
+                                                <p class="mz-p2 fw-b">Swift Code: IDFBINBBMUM</p>
+                                            </div>
+
+                                        </td>
+                                        <td class="w-n50" style="vertical-align: top;">
+                                            <div>
+                                                <table id="table-4" class="p-n8 fw-b">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Sub Total</td>
+                                                            <td class="text-right">{{invoice_subtotal_amount|floatformat:"2"}}</td>
+                                                        </tr>
+                                                        {% if tax_choice == '2' %}
+                                                        <tr>
+                                                            <td>IGST (18%) on {{invoice_subtotal_amount|floatformat:"2"}}</td>
+                                                            <td class="text-right">{{invoice_IGST_value|floatformat:"2"}}</td>
+                                                        </tr>
+                                                        {% elif tax_choice == '3' %}
+                                                        <tr>
+                                                            <td>CGST (9%) on {{invoice_subtotal_amount|floatformat:"2"}}</td>
+                                                            <td class="text-right">{{invoice_CGST_value|floatformat:"2"}}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>SGST (9%) on {{invoice_subtotal_amount|floatformat:"2"}}</td>
+                                                            <td class="text-right">{{invoice_SGST_value|floatformat:"2"}}</td>
+                                                        </tr>
+                                                        {% endif %}
+                                                        {% if invoice_currency.iso == 'INR' %}
+                                                        <tr>
+                                                            <td>Total (in {{invoice_currency.iso}})</td>
+                                                            <td class="text-right">{{invoice_total_amount|floatformat:"0"}}</td>
+                                                        </tr>
+                                                        <tr class="bg-pink text-white">
+                                                            <td>Balance Due (in {{invoice_currency.iso}})</td>
+                                                            <td class="text-right">{{invoice_total_amount|floatformat:"0"}}</td>
+                                                        </tr>
+                                                        {% else %}
+                                                        <tr>
+                                                            <td>Total (in {{invoice_currency.iso}})</td>
+                                                            <td class="text-right">{{invoice_total_amount|floatformat:"2"}}</td>
+                                                        </tr>
+                                                        <tr class="bg-pink text-white">
+                                                            <td>Balance Due (in {{invoice_currency.iso}})</td>
+                                                            <td class="text-right">{{invoice_total_amount|floatformat:"2"}}</td>
+                                                        </tr>
+                                                        {% endif %}
+                                                        {% if invoice_currency.iso == 'INR' and invoice_show_conversion_rate %}
+                                                        <tr class="bg-blue text-white">
+                                                            <td>Conversion Rate</td>
+                                                            <td class="text-right">{{invoice_conversion_rate}}</td>
+                                                        </tr>
+                                                        <tr class="bg-pink text-white">
+                                                            <td>Balance Due (in USD)</td>
+                                                            <td class="text-right">{{invoice_total_amount_in_USD|floatformat:"2"}}</td>
+                                                        </tr>
+
+                                                        {% endif %}
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                                                        
+                                </tbody>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

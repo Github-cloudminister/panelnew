@@ -1,0 +1,292 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <style type="text/css">
+    @page {
+        size: letter portrait;
+        margin: 0.5cm;
+    }
+    body {
+        background-color: #EEE;
+        /* font-size: 0.9em !important; */
+    }
+    .invoice {
+        /* width: 750px !important; */
+        /* margin: 10px auto; */
+        background-color: #fff;
+    }
+    .media-left {
+        background-color: #e7f2f9;
+        text-align: center;
+    }
+    .invoice-header{
+        text-align: center;
+    }
+    .h1 {
+        padding-top: 10px;
+        margin: 0px 5px;
+        font-size: 65px;
+        font-weight: bold;
+        color: #084263;
+    }
+    .invoice-details{
+        margin-left: 15px;
+    }
+    p {
+        font-size: 16px;
+        color: #777676;
+        margin: 13px 0;
+    }
+    .borderline {
+        border-bottom: solid 2px #000;
+        /* width: 100%; */
+        /* height: 2px; */
+        margin: 0;
+    }
+    p span {
+        font-weight: bold;
+        color: #000;
+    }
+    h3 {
+        font-size: 15px;
+        color: #000;
+        font-weight: bold;
+        margin: 0 0px 5px 0;
+    }
+    
+    .invoicetomain {
+        margin: 10px;
+        padding: 10px;
+    }
+    .morecont {
+        box-shadow: 0 0 24px 0 rgb(0 0 0 / 10%);
+        border-radius: 20px;
+        padding: 15px 10px;
+    }
+    .morecont .panel.panel-default {
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        margin: 25px 0;
+    }
+    .info {
+        padding: 7px 0;
+        background-color: #fff;
+        /* width: 100%; */
+    }
+    .panel-title {
+        /* margin-top: 0; */
+        /* margin-bottom: 0; */
+        font-size: 18px;
+        color: inherit;
+        font-weight: bold;
+        text-align: left;
+    }
+    .morecont .panel.panel-default td {
+        margin: 20px 0;
+        padding: 10px 13px;
+        text-align: center;
+    }
+    .morecont .panel.panel-default h4, .morecont .panel.panel-default p {
+        margin: 0px 0 10px;
+        text-align: left;
+        padding: 2px 10px;
+    }
+    .info h4 {
+        padding: 6px 0 0 60px;
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 5px;
+        color: #37517e;
+    }
+    .info p {
+        padding: 0 0 10px 60px;
+        margin-bottom: 20px;
+        font-size: 14px;
+        color: #6182ba;
+    }
+    .info i {
+        font-size: 20px;
+        color: #47b2e4;
+        float: left;
+        width: 44px;
+        height: 44px;
+        background-color: #e7f5fb;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        transition: all 0.3s ease-in-out;
+    }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .info {
+        padding: 7px 0;
+        background-color: #fff;
+    }
+    </style>
+</head>
+<body>
+    <table class="invoice">
+        <tbody>
+            <tr>
+                <td class="media-left">
+                    <img src="data:image/png;base64,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" alt="">
+                </td>
+                <td class="invoice-header">
+                    <p class="h1">Invoice</p>
+                </td>
+                <td>
+                    <table class="invoice-details">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h3>Invoice Details</h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="borderline"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="text-muted">Invoice No  :<span> 554775/R1</span></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="text-muted">Account No  :<span> 554775/R1</span></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="text-muted">Invoice Date :<span> 554775/R1</span></p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="invoicetomain">
+                    <table border="0" cellspacing="0" cellpadding="0">
+                        <tbody>
+                            <tr>
+                                <td class="morecont">
+                                    <table class="panel panel-default" border="0" cellspacing="0" cellpadding="0">
+                                        <tbody class="info">
+                                            <tr>
+                                                <td colspan="2">
+                                                    <h3 class="panel-title">Invoice To</h3>
+                                                </td>
+                                            </tr>
+                                            <tr class="address">
+                                                <td>
+                                                    <i class="fa fa-building mapfont"></i>
+                                                </td>
+                                                <td>
+                                                    <h4>Company:</h4>
+                                                    <p>Vpanel PVT. LTD.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="address">
+                                                <td>
+                                                    <i class="fa fa-map-marker mapfont"></i>
+                                                </td>
+                                                <td>
+                                                    <h4>Location:</h4>
+                                                    <p>A108 Adam Street,<br/> New York,<br/> NY 535022</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="email">
+                                                <td>
+                                                    <i class="fa fa-envelope-o mapfont"></i>
+                                                </td>
+                                                <td>
+                                                    <h4>Email:</h4>
+                                                    <p>info@example.com</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="phone">
+                                                <td>
+                                                    <i class="fa fa-phone mapfont"></i>
+                                                </td>
+                                                <td>
+                                                    <h4>Call:</h4>
+                                                    <p>+1 5589 55488 55s</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="panel-heading">
+                                                <td colspan="2">
+                                                    <h3 class="panel-title">Payment Method</h3>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td class="invoicetomain" colspan="2">
+                    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                        <tbody>
+                            <tr>
+                                <td class="morecont">
+                                    <table class="panel panel-default" border="0" cellspacing="0" cellpadding="0">
+                                        <tbody class="info newinf">
+                                            <tr>
+                                                <td>
+                                                    <h3 class="panel-title">Ship To</h3>
+                                                </td>
+                                            </tr>
+                                            <tr class="address">
+                                                
+                                                <td style="text-align: left;">
+                                                    <h3 style="display:inline;float:left">Company: </h3>
+                                                    <p style="display:inline;float:left">Vpanel PVT. LTD.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="address">
+                                                
+                                                <td style="text-align: left;">
+                                                    <h3 style="display:inline;float:left">Location: </h3>
+                                                    <p style="display:inline;float:left">Location: A108 Adam Street, New York, NY 535022</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="email">
+                                                
+                                                <td style="text-align: left;">
+                                                    <h3 style="display:inline;float:left">Email: </h3>
+                                                    <p style="display:inline;float:left">info@example.com</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="phone">
+                                                <td style="text-align: left;">
+                                                    <h3 style="display:inline;float:left">Call: </h3>
+                                                    <p style="display:inline;float:left">+1 5589 55488 55</p>
+                                                </td>
+                                                
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>

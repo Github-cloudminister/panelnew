@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html data-editor-version="2" class="sg-campaigns" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+<link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet">
+
+<style type="text/css">
+body {
+margin: 0;
+padding: 0;
+}
+
+table,
+th,
+td,
+tr {
+vertical-align: top;
+border: 1px solid black;;
+border-collapse: separate;
+}
+
+
+* {
+line-height: inherit;
+}
+</style>
+
+</head>
+
+<body>
+<div>                                       
+<div style="font-family: inherit; text-align: inherit">
+<span
+style="font-size: 15px; font-family: inherit">Hi Team,
+</span>
+</div>
+<br>
+<div style="font-family: inherit; text-align: inherit">
+<span
+style="font-size: 15px; font-family: inherit">Please find your update below:
+</span>
+</div>
+
+
+<div style="font-family: inherit; text-align: inherit"><br></div>
+{% for supplier_dict in prjgrpsupplier_stats %}
+<table style="text-align: center;">
+<tr>
+<th>Total N</th>
+<th>Clicks</th>
+<th>Visits</th>
+<th>Completes</th>
+<th>Fails</th>
+<th>Quota Full</th>
+<th>Security Terminates</th>
+<th>CPI</th>
+</tr>
+<tr>
+<td>{{supplier_dict.supplier_completes}}</td>
+<td>{{supplier_dict.supplier_clicks}}</td>
+<td>{{supplier_dict.visits}}</td>
+<td>{{supplier_dict.completes}}</td>
+<td>{{supplier_dict.incompletes}}</td>
+<td>{{supplier_dict.quota_full}}</td>
+<td>{{supplier_dict.security_terminate}}</td>
+<td>{{supplier_dict.supplier_cpi}}</td>
+</tr>
+</table>
+{% endfor %}
+<div style="font-family: inherit; text-align: inherit"><br></div>
+
+
+
+<div style="font-family: inherit; text-align: inherit"><br></div>
+<div style="font-family: inherit; text-align: inherit"><br></div>
+<div style="font-family: inherit; text-align: inherit">
+<span
+style="font-size: 17px; font-family: inherit">
+<b><u>Additional Notes:</u></b> <br>
+{{message|safe}}
+</span>
+</div>
+<div style="font-family: inherit; text-align: inherit"><br></div>
+<div style="font-family: inherit; text-align: inherit">
+<span
+style="font-size: 17px; font-family: inherit">Thanks,
+</span>
+</div>
+<div style="font-family: inherit; text-align: left"><span
+style="font-size: 17px; font-family: inherit">Project Management Team</span></div>
+<div></div>
+</div>
+</body>
+
+</html>

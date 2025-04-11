@@ -1,0 +1,119 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Survey</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/gif" sizes="16x16" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'images/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'images/site.webmanifest' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="{% static 'css/survey_page.css' %}" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="{% static 'js/survey_page.js' %}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="http://www.google.com/jsapi" type="text/javascript"></script>
+</head>
+
+<body>
+    <section class="banner">
+        <div>
+            <div>
+                <form method="post">
+                {% csrf_token %}
+                    <h3>Thank you for agreeing to take our survey.</h3>
+                    <h3>This survey will take about {{loi}} minutes to complete.</h3>
+                    <hr />
+                    <h3 id="message-1" class="sub-head" {% if survalidatecall %} style="display: none;"{% endif %}>
+                        Please click <b><span class="button">Next</span></b> to begin.
+                    </h3>
+                    {% if survalidatecall %} 
+                    <p id="message-2" style="color: #FFF; font-size: 1.5em;">
+                        Loading...
+                    </p>
+                    {% endif %}
+                    <a id="next-link"{% if survalidatecall %} style="display: none;"{% endif %}><button class="btn btn-info next-button" type="submit">Next <i class="fa fa-arrow-right" aria-hidden="true"></i></button></a>
+                </form>
+            </div>
+        </div>
+    </section>
+    {% if survalidatecall %}
+    <form id="form1">
+        <input type="hidden" id="escore" value="&svscore=-2" />
+        <input type="hidden" id="companycode" name="companycode" value="{{companycode}}" />
+        <input type="hidden" id="caid" value = "{{caid}}"/>
+        <input type="hidden" id="paid" value = "{{paid}}"/>
+        <input type="hidden" id="coolingon" value = "{{coolingon}}"/>
+        <input type="hidden" id="coolingperiod" value = "{{coolingperiod}}"/>
+        <input type="hidden" id="coolingcheck" value = "{{coolingcheck}}"/>
+    </form>
+
+    <script type="text/javascript"  src="https://probity.survalidate.com/sv.js"></script>
+    <script type="text/javascript">  
+
+    function TrackDone() {
+        var results="";                                          
+        // alert("Survalidate Call Initiated")
+        // output values
+        results = results +  document.getElementById('escore').value ;
+        // alert(results);
+        
+        if (results != "score=-1"){
+            $.ajax({
+                type: 'POST',
+                url: "{%url 'Surveyentry:respondentdetails' %}",
+                data:{
+                    csrfmiddlewaretoken: "{{csrf_token}}",
+                    'data': results,
+                    'url_string': "{{urlsafe_str}}",
+                },
+                success: function(msg){
+                    console.log(msg);
+                    $("#next-link").show();
+                    $("#message-1").show();
+                    $("#message-2").remove();
+                },
+                error: function(err){
+                    // $(".banner div div p").text(err.responseJSON.error);
+                    $("#next-link").show();
+                    $("#message-1").show();
+                    $("#message-2").remove();
+                }
+            });
+        } else {
+            // $(".banner div div p").text('Try again..!');
+            $("#next-link").show();
+            $("#message-1").show();
+            $("#message-2").remove();
+        }
+        
+        // document.getElementsByClassName('card-body')[0].childNodes[1].textContent = results;
+        // console.log(results)
+    }
+
+    var timeout2 = 1000;
+    poll2 = function () {
+        setTimeout(function () {
+            timeout2--;
+            console.log("2-"+timeout2);
+            if (document.getElementById('escore').value != "&svscore=-2") {
+                TrackDone();    
+            } else if (timeout2 > 0) {
+                poll2();
+            } else { 
+                console.log("timeout2");
+                TrackDone();
+            }
+        }, 100);
+    };
+    poll2();
+    </script>
+    {% endif %}
+</body>
+
+</html>

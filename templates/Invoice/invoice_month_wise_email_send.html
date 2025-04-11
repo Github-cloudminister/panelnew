@@ -1,0 +1,112 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office"
+	xmlns:v="urn:schemas-microsoft-com:vml">
+
+<head>
+	<!--[if gte mso 9]><xml><o:OfficeDocumentSettings><o:AllowPNG/><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml><![endif]-->
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<meta content="width=device-width" name="viewport" />
+	<!--[if !mso]><!-->
+	<meta content="IE=edge" http-equiv="X-UA-Compatible" />
+	<!--<![endif]-->
+	<title></title>
+	<!--[if !mso]><!-->
+	<!--<![endif]-->
+	<style type="text/css">
+		body {
+			margin: 20;
+			padding: 20;
+		}
+
+		table,
+		th,
+		td,
+		tr {
+			vertical-align: top;
+			border: 1px solid black;;
+			border-collapse: collapse;
+		}
+
+		* {
+			line-height: inherit;
+		}
+
+		a[x-apple-data-detectors=true] {
+			color: inherit !important;
+			text-decoration: none !important;
+		}
+	</style>
+	<style id="media-query" type="text/css">
+		
+	</style>
+	<style id="icon-media-query" type="text/css">
+		
+		</style>
+</head>
+
+<body class="clean-body" style="margin: 0; padding: 0; background-color: #FFFFFF;">
+	
+	<div>
+		<p>
+			Hi Team,<br>
+		</p>
+		<p>
+			I hope this email finds you well. I am writing to provide you with the invoice report for the month of June 2024.<br>
+            Kindly review the below details and let me know if you have any questions or require further clarification.<br>
+
+		</p>
+		<p>
+            Please take the time to carefully examine the provided invoices. Should you come across any discrepancies or have any <br>
+            queries regarding specific items, amounts, or other details, kindly reach out to me directly. I will be more than happy to <br>
+            address any concerns you may have and provide any necessary explanations or documentation.
+
+		</p>
+		<p>
+			Here are the lists..<br>
+		</p>
+	</div>
+
+
+
+	<table style="text-align: center; margin-block: 20px;" width="60%">
+		<thead>
+			<!-- <tr>
+				<th colspan="5" style="color:#555555;direction:ltr;font-family:Arial, Helvetica Neue, Helvetica, sans-serif;padding-bottom: 0px; padding-top: 0px;">
+					<h1 style="margin-bottom: 0px; margin-top: 0px;">Supplier Final IDs</h1>
+				</th>
+			</tr> -->
+			<tr>
+					<th>Invoice Number</th>
+					<th>Invoice Date</th>
+					<th>Invoice Due Date</th>
+					<th>Invoice Total Amount</th>
+				
+			</tr>
+		</thead>
+		<tbody>
+				{% for invoice in invoice_list %}
+				<tr>
+					<td>{{invoice.invoice_number}}</td>
+					<td>{{invoice.invoice_date}}</td>
+					<td>{{invoice.invoice_due_date}}</td>
+					<td>{{invoice.invoice_currency.currency_iso}} {{invoice.invoice_total_amount}}</td>
+				</tr>
+				{% endfor %}
+		</tbody>
+	</table>
+	
+		<!-- <div style="height: 0.8cm;width: 10%;border-color: black;border-width: 1px;border-style: none double double;text-align: center; margin-left: 19%;">
+		</div> -->
+
+		<br>
+		<br>
+		Thank you,
+		<br>
+		Accounts Team
+
+
+</body>
+
+</html>

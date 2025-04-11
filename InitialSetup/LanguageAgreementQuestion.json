@@ -1,0 +1,642 @@
+{
+    "en" : {
+        "question": "Please note: This survey needs response only in \"language\". If you are well versed with this language then please select option in correct language and proceed. All nonsense, similar and gibberish responses will lead to straight disqualification of the respondent.",
+        "answer": "Yes, I know the language and agree to participate"
+    },
+    "ab" : {
+        "question": "Иазгәашәҭ: Ари азҵаара аҭак \"бызшәала\" мацара ауп иаҭаху. Ари абызшәа ибзианы иудыруазар, ииашоу абызшәала авариант алхны ԥхьаҟа уца. Иҵакыдоу, еиԥшу, ҵакы змам аҭакқәа зегьы аҭакҟаҵаҩ ииашаны идисквалификациа ахь инагоит.",
+        "answer": "Ааи, абызшәа здыруеит, сақәшаҳаҭуп алахәхарагьы"
+    },
+    "aa" : {
+        "question": "kumaganak cubbus: ta acassaale dubuk \"afat\" gacsa faxxa. Atu ta af nagay taaxige koo tekkek ku maganak gitah yan af dooritaay bisoh edde inxic. Inkih tan finqa, itta ceelaah, gibberish gacsitte saanih gacsa abe numih dudda sinna fan beyta.",
+        "answer": "Yeey, Anu af aaxigeeh, gabat agle oggolah"
+    },
+    "af" : {
+        "question": "Neem asseblief kennis: Hierdie opname benodig slegs antwoord in \"taal\". As jy goed vertroud is met hierdie taal, kies asseblief opsie in korrekte taal en gaan voort. Alle nonsens, soortgelyke en brabbelagtige reaksies sal lei tot reguit diskwalifikasie van die respondent.",
+        "answer": "a, ek ken die taal en stem in om deel te neem"
+    },
+    "sq" : {
+        "question": "Ju lutemi vini re: Ky sondazh ka nevojë për përgjigje vetëm në \"gjuhë\". Nëse jeni njohës i mirë i kësaj gjuhe, ju lutemi zgjidhni opsionin në gjuhën e duhur dhe vazhdoni. Të gjitha përgjigjet e pakuptimta, të ngjashme dhe të kota do të çojnë në skualifikim të drejtpërdrejtë të të paditurit.",
+        "answer": "Po, e di gjuhën dhe pranoj të marr pjesë"
+    },
+    "am" : {
+        "question": "እባክዎን ያስተውሉ፡ ይህ የዳሰሳ ጥናት ምላሽ የሚያስፈልገው በ\"ቋንቋ\" ብቻ ነው። ይህን ቋንቋ ጠንቅቀው የሚያውቁ ከሆኑ እባኮትን በትክክለኛው ቋንቋ ይምረጡ እና ይቀጥሉ። ሁሉም የማይረቡ፣ ተመሳሳይ እና ጅብታዊ ምላሾች ምላሽ ሰጪውን በቀጥታ ወደ ውድቅት ያመራሉ ።",
+        "answer": "አዎ ቋንቋውን አውቀዋለሁ እናም ለመሳተፍ እስማማለሁ።"
+    },
+    "ar" : {
+        "question": "يرجى ملاحظة: هذا الاستطلاع يحتاج إلى الرد باللغة فقط. إذا كنت على دراية جيدة بهذه اللغة، فيرجى تحديد الخيار باللغة الصحيحة والمتابعة. ستؤدي جميع الإجابات غير المنطقية والمتشابهة والهراء إلى استبعاد المستجيب بشكل مباشر.",
+        "answer": "نعم، أعرف اللغة وأوافق على المشاركة"
+    },
+    "hy" : {
+        "question": "Խնդրում ենք նկատի ունենալ. այս հարցումը պատասխանի կարիք ունի միայն «լեզուով»: Եթե ​​դուք լավ տիրապետում եք այս լեզվին, ապա խնդրում ենք ընտրել ճիշտ լեզվով տարբերակը և շարունակել: Բոլոր անհեթեթ, նմանատիպ և շաղախված պատասխանները կհանգեցնեն պատասխանողի ուղիղ որակազրկմանը:",
+        "answer": "Այո, ես գիտեմ լեզուն և համաձայն եմ մասնակցել"
+    },
+    "as" : {
+        "question": "অনুগ্ৰহ কৰি মন কৰক: এই সমীক্ষাত কেৱল \"ভাষা\"তহে সঁহাৰিৰ প্ৰয়োজন। যদি আপুনি এই ভাষাৰ সৈতে ভালদৰে পৰিচিত তেন্তে অনুগ্ৰহ কৰি সঠিক ভাষাত বিকল্প বাছি লওক আৰু আগবাঢ়ি যাওক। সকলো আজে বাজে, একেধৰণৰ আৰু জিবৰিছ সঁহাৰিয়ে উত্তৰদাতাক পোনপটীয়াকৈ অযোগ্য কৰি তুলিব।",
+        "answer": "হয়, মই ভাষাটো জানো আৰু অংশগ্ৰহণ কৰিবলৈ সন্মত"
+    },
+    "av" : {
+        "question": "ХӀисаб гьабе: Гьаб цӀех-рехалъе жаваб кьезе ккола гӀицӀго \"мацӀалда\". Если вы хорошо знаете этот язык то пожалуйста выберите вариант на правильном языке и продолжите. Киналго чӀандаби, гьелда релъарал ва махсароде кколел жавабаз рачине руго жавабчи битӀахъего дисквалификациялде.",
+        "answer": "У, дида лъала мацӀ ва рази вуго гӀахьаллъизе"
+    },
+    "ay" : {
+        "question": "Uñt'apxañani: Aka yatxatawix \"aru\" ukakiw jaysaña. Jumatix aka aru sum yatxatsta ukhax chiqap arun opción ajlliñamawa ukat nayrar sartañamawa. Taqi jan wali, uñtasita ukat jan amuyt’kaya jaysawinakax chiqapa descalificación ukaruw puriyani, ukax jiskt’asir jaqirux chiqak descalificación ukaruw puriyani.",
+        "answer": "#VALUE!"
+    },
+    "az" : {
+        "question": "Nəzərə alın: Bu sorğuya yalnız \"dildə\" cavab lazımdır. Əgər bu dili yaxşı bilirsinizsə, lütfən, düzgün dildə seçimi seçin və davam edin. Bütün cəfəngiyat, oxşar və cəfəng cavablar cavabdehin birbaşa diskvalifikasiyasına səbəb olacaq.",
+        "answer": "Bəli, mən dili bilirəm və iştirak etməyə razıyam"
+    },
+    "bm" : {
+        "question": "Aw k'a kɔlɔsi: Nin ɲinini in mago bɛ jaabi la \"kan\" dɔrɔn de la. N'i bɛ nin kan in dɔn kosɛbɛ o tuma na i ka sugandi sugandi kan ɲuman na ka taa ɲɛ. Jaabi fuw, minnu bɛ tali kɛ ɲɔgɔn na ani minnu bɛ kɛ ni kumakanw ye, olu bɛɛ bɛna kɛ sababu ye ka jaabi dibaga ka setigiya tiɲɛ.",
+        "answer": "#VALUE!"
+    },
+    "ba" : {
+        "question": "Иғтибар итегеҙ: был һорау алыуға яуап тик \"телдә\" генә кәрәк. Әгәр һеҙ был телде яҡшы белһәгеҙ, дөрөҫ телдә вариантты һайлағыҙ һәм дауам итегеҙ. Бөтә буш һүҙҙәр, оҡшаш һәм һүҙһеҙ яуаптар яуап биргән кешене туранан-тура дисквалификациялауға килтерәсәк.",
+        "answer": "#VALUE!"
+    },
+    "eu" : {
+        "question": "Kontuan izan: inkesta honek \"hizkuntzan\" soilik erantzun behar du. Hizkuntza hau ondo ezagutzen baduzu, mesedez hautatu hizkuntza egokian aukera eta jarraitu. Zentzugabeko, antzeko eta zentzugabeko erantzun guztiek inkestatuaren deskalifikazio zuzena ekarriko dute.",
+        "answer": "Bai, badakit hizkuntza eta parte hartzea onartzen dut"
+    },
+    "be" : {
+        "question": "Звярніце ўвагу: гэтае апытанне патрабуе адказу толькі на «мове». Калі вы добра валодаеце гэтай мовай, абярыце варыянт на правільнай мове і працягвайце. Усе глупствы, падобныя і тарабарскія адказы прывядуць да прамой дыскваліфікацыі рэспандэнта.",
+        "answer": "Так, я ведаю мову і згодны ўдзельнічаць"
+    },
+    "bn" : {
+        "question": "অনুগ্রহ করে মনে রাখবেন: এই সমীক্ষার শুধুমাত্র \"ভাষায়\" প্রতিক্রিয়া প্রয়োজন। আপনি যদি এই ভাষার সাথে ভালভাবে পারদর্শী হন তবে দয়া করে সঠিক ভাষায় বিকল্প নির্বাচন করুন এবং এগিয়ে যান। সমস্ত আজেবাজে, অনুরূপ এবং বাজে প্রতিক্রিয়া উত্তরদাতার সরাসরি অযোগ্যতার দিকে নিয়ে যাবে।",
+        "answer": "হ্যাঁ, আমি ভাষা জানি এবং অংশগ্রহণ করতে সম্মত"
+    },
+    "bs" : {
+        "question": "Napomena: Na ovu anketu je potreban odgovor samo na \"jeziku\". Ako ste dobro upućeni u ovaj jezik, odaberite opciju na ispravnom jeziku i nastavite. Sve gluposti, slični i brbljavi odgovori će dovesti do direktne diskvalifikacije ispitanika.",
+        "answer": "Da, znam jezik i slažem se da učestvujem"
+    },
+    "br" : {
+        "question": "Notenn : N'eus ezhomm respont d'ar sontadeg-mañ nemet e \"yezh\". Mard oc'h barrek war ar yezh-mañ, diuzit an dibab er yezh reizh ha kendalc'hit. An holl respontoù dister, heñvel ha dister a gaso da zizalc'hiezh ar responter diouzhtu.",
+        "answer": "Ya, gouzout a ran ar yezh hag asantiñ a ran kemer perzh"
+    },
+    "bg" : {
+        "question": "Моля, обърнете внимание: Тази анкета изисква отговор само на „език“. Ако владеете добре този език, моля, изберете опция на правилния език и продължете. Всички глупости, подобни и безсмислени отговори ще доведат до директна дисквалификация на респондента.",
+        "answer": "Да, знам езика и съм съгласен да участвам"
+    },
+    "my" : {
+        "question": "ကျေးဇူးပြု၍ မှတ်ချက်- ဤစစ်တမ်းသည် \"ဘာသာစကား\" ဖြင့်သာ တုံ့ပြန်ရန် လိုအပ်ပါသည်။ သင်သည် ဤဘာသာစကားကို ကောင်းစွာနားလည်ပါက မှန်ကန်သောဘာသာစကားဖြင့် ရွေးချယ်မှုကို ရွေးချယ်ပြီး ရှေ့ဆက်ပါ။ အဓိပ္ပါယ်မဲ့သော၊ အလားတူနှင့် ရိုင်းစိုင်းသော တုံ့ပြန်မှုများအားလုံးသည် ဖြေဆိုသူ၏ အရည်အချင်းမပြည့်မီမှုကို ဖြစ်ပေါ်စေလိမ့်မည်။",
+        "answer": "ဟုတ်ကဲ့၊ ကျွန်တော် ဘာသာစကားကို သိပြီး ပါဝင်ဖို့ သဘောတူပါတယ်။"
+    },
+    "ca" : {
+        "question": "Tingueu en compte: aquesta enquesta només necessita resposta en \"idioma\". Si coneixeu bé aquest idioma, seleccioneu l'opció en l'idioma correcte i continueu. Totes les respostes sense sentit, semblants i absurdes comportaran la desqualificació directa de l'enquestat.",
+        "answer": "Sí, sé l'idioma i accepto participar"
+    },
+    "ch" : {
+        "question": "På'go: Este na survey ha nisisita ha' ineppe gi \"fino' CHamoru\". Yanggen maolek hao gi este na lengguåhi pues fa'tinas i option gi i maolek na lengguåhi ya un sigi ha'. Todu i ineppe siha ni' ti maolek, parehu yan ti maolek, u na'fanhuyong i ineppe ni' ti kualifikao.",
+        "answer": "Si, se la lengua y acepto participar"
+    },
+    "ce" : {
+        "question": "Тидам бе: ХӀокху талламна жоьпаш \"маттахь\" бен ца оьшу. Нагахь санна хьуна и мотт дика бевзаш белахь, нийсачу маттахь вариант схьа а эций, дӀагӀо. Массо а эрна, цунах тера, галморзахаллин жоьпаш даларо нийса дисквалификаци йийр ю респондентан.",
+        "answer": "ХӀаъ, суна мотт хаьа, дакъалаца реза ву со"
+    },
+    "ny" : {
+        "question": "Chonde dziwani: Kafukufukuyu akufunika kuyankhidwa mu \"chinenero\". Ngati mumadziwa bwino chilankhulochi, chonde sankhani njira muchilankhulo cholondola ndikupitilira. Mayankho onse opanda pake, ofanana ndi achipongwe apangitsa kuti woyankhayo asakhale woyenera.",
+        "answer": "Inde, ndikudziwa chinenerocho ndipo ndikuvomera kutenga nawo mbali"
+    },
+    "zh" : {
+        "question": "请注意：此调查仅需要以“语言”进行回复。如果您精通该语言，请选择正确语言的选项并继续。所有胡言乱语、类似和胡言乱语的回答将导致直接取消回答者的资格。",
+        "answer": "是的，我懂该语言并同意参加"
+    },
+    "cv" : {
+        "question": "Асӑрхаттаратпӑр: ку ыйтӑма «чӗлхепе» ҫеҫ хуравламалла. Эсир ҫак чӗлхене лайӑх пӗлетӗр пулсан, тархасшӑн, тӗрӗс чӗлхепе суйласа илӗр те малалла кайӑр. Пур ухмахла, пӗр пек тата ухмахла хуравсем те респондент тӳрех дисквалификаци патне илсе пыраҫҫӗ.",
+        "answer": "Ҫапла, эпӗ чӗлхене пӗлетӗп тата хутшӑнма килӗшетӗп"
+    },
+    "co" : {
+        "question": "Per piacè nutate: Questa indagine hà bisognu di risposta solu in \"lingua\". Sè vo site bè versatu cù sta lingua allora sceglite l'opzione in a lingua curretta è procede. Tutti i risposti senza senso, simili è gibbberish portanu à a disqualificazione diretta di u rispondente.",
+        "answer": "Iè, cunnoscu a lingua è accunsenu à participà"
+    },
+    "hr" : {
+        "question": "Napomena: Ova anketa zahtijeva odgovor samo na \"jeziku\". Ako dobro poznajete ovaj jezik, odaberite opciju na ispravnom jeziku i nastavite. Sve besmislice, slični i besmislice dovest će do izravne diskvalifikacije ispitanika.",
+        "answer": "Da, znam jezik i pristajem sudjelovati"
+    },
+    "cs" : {
+        "question": "Poznámka: Tento průzkum vyžaduje odpověď pouze v \"jazyce\". Pokud se v tomto jazyce dobře vyznáte, vyberte prosím možnost ve správném jazyce a pokračujte. Všechny nesmyslné, podobné a nesmyslné odpovědi povedou k přímé diskvalifikaci respondenta.",
+        "answer": "Ano, znám jazyk a souhlasím s účastí"
+    },
+    "da" : {
+        "question": "Bemærk venligst: Denne undersøgelse kræver kun svar på \"sprog\". Hvis du er velbevandret med dette sprog, så vælg venligst indstillingen på det korrekte sprog og fortsæt. Al nonsens, lignende og volapyk vil føre til direkte diskvalifikation af respondenten.",
+        "answer": "Ja, jeg kender sproget og accepterer at deltage"
+    },
+    "dv" : {
+        "question": "ނޯޓް: މި ސާރވޭއަށް ޖަވާބު ބޭނުންވަނީ ހަމައެކަނި \"ބަހުން\" އެވެ. މި ބަހަށް ރަނގަޅަށް ފަރިތަ ނަމަ ރަނގަޅު ބަހުން އޮޕްޝަން ހޮވައިގެން ކުރިއަށް ވަޑައިގަންނަވާށެވެ. ހުރިހާ ދޮގު ވާހަކަތަކާއި، އެއްގޮތް އަދި ގިބްރިޝް ޖަވާބުތަކެއް ލިބުމުން ޖަވާބުދާރީވާ މީހާ ސީދާ ޑިސްކޮލިފިކޭޝަން އަށް މަގުފަހިވާނެ އެވެ.",
+        "answer": "އާދެ، އަޅުގަނޑަށް ބަސް އެނގޭތީ ބައިވެރިވާން އެއްބަސް"
+    },
+    "nl" : {
+        "question": "Let op: voor deze enquête is alleen een antwoord in \"taal\" nodig. Als u goed bekend bent met deze taal, selecteer dan de optie in de juiste taal en ga verder. Alle onzin, gelijksoortige en wartaalachtige reacties zullen leiden tot regelrechte diskwalificatie van de respondent.",
+        "answer": "Ja, ik ken de taal en ga akkoord met deelname"
+    },
+    "dz" : {
+        "question": "དྲན་འཛིན་: ཞིབ་འཇུག་འདི་ལུ་ \"language\" ནང་ལུ་རྐྱངམ་ཅིག་ལན་དགོཔ་ཨིན། ཁྱོད་ཀྱིས་སྐད་ཡིག་འདི་ལེགས་ཤོམ་སྦེ་ཤེས་པ་ཅིན་ སྐད་ཡིག་ངེས་བདེན་ནང་གདམ་ཁ་སེལ་འཐུ་འབད་ཞིནམ་ལས་ འཕྲོ་མཐུད་གནང་། ཁུངས་མེདཔ་དང་ ཅོག་འཐདཔ་ དེ་ལས་ ཁུངས་མེད་པའི་ལན་ཚུ་ག་ར་གིས་ ལན་འདེབས་འབད་མི་འདི་ ཐད་ཀར་དུ་ ཤེས་ཚད་མེདཔ་བཟོ་འོང་།",
+        "answer": "ཨིན་ ང་གིས་སྐད་ཡིག་ཤེས་ཏེ་ བཅའ་མར་གཏོགས་ནི་ལུ་ ངོས་ལེན་ཡོད།"
+    },
+    "eo" : {
+        "question": "Bonvolu noti: Ĉi tiu enketo bezonas respondon nur en \"lingvo\". Se vi bone konas ĉi tiun lingvon, bonvolu elekti opcion en ĝusta lingvo kaj daŭrigi. Ĉiuj sensencaĵoj, similaj kaj babelaj respondoj kondukos al rekta malkvalifiko de la respondanto.",
+        "answer": "Jes, mi konas la lingvon kaj konsentas partopreni"
+    },
+    "et" : {
+        "question": "Pange tähele. See küsitlus vajab vastamist ainult \"keeles\". Kui tunnete seda keelt hästi, valige õiges keeles valik ja jätkake. Kõik rumalad, sarnased ja jaburad vastused toovad kaasa vastaja otsese diskvalifitseerimise.",
+        "answer": "Jah, ma oskan keelt ja olen nõus osalema"
+    },
+    "ee" : {
+        "question": "Taflatse de dzesii: Numekuku sia hiã ŋuɖoɖo le \"gbegbɔgblɔ\" me ko. Ne ènya gbe sia nyuie la, ekema taflatse tia tiatia le gbe si sɔ me eye nàyi edzi. Nyaŋuɖoɖo siwo katã me susu mele o, siwo sɔ kple wo nɔewo kple nya ƒaƒãwo katã ana woaɖe amesi wobia gbee la ɖa tẽ.",
+        "answer": "Ẽ, menya gbea eye melɔ̃ be makpɔ gome le eme"
+    },
+    "fo" : {
+        "question": "Gev gætur: Henda kanningin hevur bert brúk fyri svari á \"máli\". Um tú ert væl kunnaður um hetta málið, so vel valmøguleikan á rættum máli og halt fram. Alt ørviti, líknandi og gibberish svar fer at føra til beinleiðis diskvalifikatión av svarandi.",
+        "answer": "Ja, eg dugi málið og játti at luttaka"
+    },
+    "fj" : {
+        "question": "Yalovinaka mo kila: Na vakadidike oqo e gadrevi kina na isau ga ena \"vosa\". Kevaka o sa kila vinaka na vosa oqo qai yalovinaka digitaka na digidigi ena vosa dodonu ka toso. Na veivakasama kece e sega ni yaga, tautauvata kei na gibberish ena vakavuna na nona sega ni vakadonui vakadodonu na dauveibeitaki.",
+        "answer": "Io, au kila na vosa ka vakadonuya meu vakaitavi"
+    },
+    "fi" : {
+        "question": "Huomaa: Tämä kysely tarvitsee vastauksen vain \"kielellä\". Jos tunnet tämän kielen hyvin, valitse vaihtoehto oikealla kielellä ja jatka. Kaikki järjettömät, samankaltaiset ja hölynpölyt vastaukset johtavat suoraan vastaajan hylkäämiseen.",
+        "answer": "Kyllä, tiedän kielen ja suostun osallistumaan"
+    },
+    "fr" : {
+        "question": "Veuillez noter : cette enquête nécessite une réponse uniquement dans la « langue ». Si vous maîtrisez bien cette langue, veuillez sélectionner l'option dans la langue correcte et continuer. Toutes les réponses absurdes, similaires et charabia entraîneront directement la disqualification du répondant.",
+        "answer": "Oui, je connais la langue et j'accepte de participer"
+    },
+    "ff" : {
+        "question": "Tesko: Ngoo wiɗto ina sokli jaabawol tan e \"ɗemngal\". So tawii aɗa anndi ngal ɗemngal no feewi, cuɓo-ɗaa cuɓal e ɗemngal laaɓngal, njahra yeeso. Denndaangal jaabawuuli ɗi ngalaa nafoore, nannduɗi e gibbe maa addan jaabtiiɗo oo waasde jogaade doole laaɓtuɗe.",
+        "answer": "Eey, miɗo anndi ɗemngal ngal, miɗo jaɓi tawtoreede"
+    },
+    "gl" : {
+        "question": "Teña en conta: esta enquisa só precisa resposta en \"idioma\". Se estás ben versado neste idioma, selecciona a opción no idioma correcto e continúa. Todas as respostas sen sentido, semellantes e galimatías levarán á descualificación directa do entrevistado.",
+        "answer": "Si, sei o idioma e acepto participar"
+    },
+    "ka" : {
+        "question": "გთხოვთ გაითვალისწინოთ: ამ გამოკითხვას სჭირდება პასუხი მხოლოდ \"ენაზე\". თუ კარგად ფლობთ ამ ენას, გთხოვთ, აირჩიოთ სწორი ენა და გააგრძელოთ. ყველა უაზრო, მსგავსი და უაზრო პასუხი გამოიწვევს რესპონდენტის პირდაპირ დისკვალიფიკაციას.",
+        "answer": "დიახ, ვიცი ენა და ვეთანხმები მონაწილეობას"
+    },
+    "de" : {
+        "question": "Bitte beachten Sie: Für diese Umfrage ist eine Beantwortung nur in „Sprache“ erforderlich. Wenn Sie mit dieser Sprache gut vertraut sind, wählen Sie bitte die Option in der richtigen Sprache aus und fahren Sie fort. Alle unsinnigen, ähnlichen und Kauderwelsch-Antworten führen zur direkten Disqualifikation des Befragten.",
+        "answer": "Ja, ich beherrsche die Sprache und bin mit der Teilnahme einverstanden"
+    },
+    "el" : {
+        "question": "Σημείωση: Αυτή η έρευνα χρειάζεται απάντηση μόνο στη \"γλώσσα\". Εάν είστε καλά γνώστες αυτής της γλώσσας, επιλέξτε τη σωστή γλώσσα και προχωρήστε. Όλες οι ανοησίες, παρόμοιες και ανόητες απαντήσεις θα οδηγήσουν σε απευθείας αποκλεισμό του ερωτώμενου.",
+        "answer": "Ναι, γνωρίζω τη γλώσσα και συμφωνώ να συμμετέχω"
+    },
+    "gn" : {
+        "question": "Eñatendéke: Ko encuesta oikotevẽ ñembohovái \"ñe'ẽme\" añoite. Oiméramo reikuaa porã ko ñe’ẽ upéicharõ eiporavo opción ñe’ẽ hekopete ha eñemotenonde. Opavave respuesta tontería, ojoajúva ha ñe'ê'asãi oguerúta descalificación recta encuestado-pe.",
+        "answer": "Heẽ, aikuaa pe idióma ha aime de akuérdo apartisipa hag̃ua"
+    },
+    "gu" : {
+        "question": "મહેરબાની કરીને નોંધ કરો: આ સર્વેક્ષણને ફક્ત \"ભાષામાં\" પ્રતિસાદની જરૂર છે. જો તમે આ ભાષા સારી રીતે જાણતા હોવ તો કૃપા કરીને સાચી ભાષામાં વિકલ્પ પસંદ કરો અને આગળ વધો. તમામ વાહિયાત, સમાન અને અસ્પષ્ટ પ્રતિભાવો પ્રતિવાદીની સીધી ગેરલાયકાત તરફ દોરી જશે.",
+        "answer": "હા, હું ભાષા જાણું છું અને ભાગ લેવા માટે સંમત છું"
+    },
+    "ht" : {
+        "question": "Tanpri sonje: Sondaj sa a bezwen repons sèlman nan \"lang\". Si w byen konn lang sa a, tanpri chwazi opsyon nan lang ki kòrèk epi kontinye. Tout repons ki san sans, ki sanble ak gabiyè pral mennen nan diskalifikasyon dirèk nan repondan an.",
+        "answer": "Wi, mwen konnen lang lan epi mwen dakò patisipe"
+    },
+    "ha" : {
+        "question": "Lura: Wannan binciken yana buƙatar amsa a cikin \"harshe\" kawai. Idan kun ƙware da wannan yaren to da fatan za a zaɓi zaɓi a cikin yaren daidai kuma ku ci gaba. Duk maganganun banza, makamantan su da gibberish za su kai ga rashin cancantar wanda ake ƙara kai tsaye.",
+        "answer": "Ee, na san yaren kuma na yarda in shiga"
+    },
+    "he" : {
+        "question": "שימו לב: סקר זה דורש תגובה רק ב\"שפה\". אם אתה בקיא בשפה זו, אנא בחר באפשרות בשפה הנכונה והמשך. כל תגובות שטויות, דומות וקשקוש יובילו לפסילה ישירה של המשיב.",
+        "answer": "כן, אני יודע את השפה ומסכים להשתתף"
+    },
+    "hi" : {
+        "question": "कृपया ध्यान दें: इस सर्वेक्षण को केवल \"भाषा\" में प्रतिक्रिया की आवश्यकता है। यदि आप इस भाषा से अच्छी तरह परिचित हैं तो कृपया सही भाषा में विकल्प चुनें और आगे बढ़ें। सभी बकवास, समान और अस्पष्ट प्रतिक्रियाओं से प्रतिवादी को सीधे अयोग्य घोषित कर दिया जाएगा।",
+        "answer": "हां, मैं भाषा जानता हूं और भाग लेने के लिए सहमत हूं"
+    },
+    "hu" : {
+        "question": "Kérjük, vegye figyelembe: ehhez a felméréshez csak „nyelven” kell válaszolni. Ha jól ismeri ezt a nyelvet, kérjük, válassza ki a megfelelő nyelvet, és folytassa. Minden értelmetlen, hasonló és ostoba válasz a válaszadó egyenes kizárásához vezet.",
+        "answer": "Igen, ismerem a nyelvet, és beleegyezek a részvételbe"
+    },
+    "id" : {
+        "question": "Harap diperhatikan: Survei ini memerlukan tanggapan hanya dalam \"bahasa\". Jika Anda fasih dengan bahasa ini, silakan pilih opsi dalam bahasa yang benar dan lanjutkan. Semua tanggapan yang tidak masuk akal, serupa, dan tidak masuk akal akan menyebabkan diskualifikasi langsung terhadap responden.",
+        "answer": "Ya, saya tahu bahasanya dan setuju untuk berpartisipasi"
+    },
+    "ga" : {
+        "question": "Tabhair do d’aire: Ní gá don suirbhé seo ach freagra a thabhairt i “teanga”. Má tá eolas maith agat ar an teanga seo roghnaigh an rogha sa teanga cheart agus lean ar aghaidh. Dícháileofar an freagróir go díreach mar thoradh ar gach freagairt nonsense, cosúla agus gibberish.",
+        "answer": "Sea, tá aithne agam ar an teanga agus aontaím páirt a ghlacadh"
+    },
+    "ig" : {
+        "question": "Biko mara: Nyocha a chọrọ nzaghachi naanị na \"asụsụ\". Ọ bụrụ na ị maara asụsụ a nke ọma, biko họrọ nhọrọ n'asụsụ ziri ezi wee gaba n'ihu. Nzaghachi nzuzu niile, ndị yiri ya na gibberish ga-eduga n'ịgbahapụ onye na-aza ajụjụ ozugbo.",
+        "answer": "Ee, amaara m asụsụ ahụ wee kweta isonye"
+    },
+    "is" : {
+        "question": "Vinsamlegast athugið: Þessi könnun þarf aðeins að svara á „tungumáli“. Ef þú ert vel kunnugur þessu tungumáli, vinsamlegast veldu valkostinn á réttu tungumáli og haltu áfram. Öll vitleysa, svipuð og kjaftshögg viðbrögð munu leiða til beinna vanhæfis á svaranda.",
+        "answer": "Já, ég kann tungumálið og samþykki að taka þátt"
+    },
+    "it" : {
+        "question": "Nota: questo sondaggio richiede una risposta solo in \"lingua\". Se sei esperto di questa lingua, seleziona l'opzione nella lingua corretta e procedi. Tutte le risposte insensate, simili e senza senso porteranno alla squalifica diretta dell'intervistato.",
+        "answer": "Sì, conosco la lingua e accetto di partecipare"
+    },
+    "ja" : {
+        "question": "注意: このアンケートは「言語」のみでの回答が必要です。この言語に精通している場合は、正しい言語のオプションを選択して続行してください。ナンセンス、似たような意味不明な回答はすべて、回答者の失格につながります。",
+        "answer": "はい、言語を理解しているので参加することに同意します"
+    },
+    "jv" : {
+        "question": "Wigati dicathet: Survei iki mung mbutuhake respon ing \"basa\". Yen sampeyan wis ngerti basa iki banjur pilih opsi ing basa sing bener lan nerusake. Kabeh omong kosong, tanggapan sing padha lan omong kosong bakal nyebabake diskualifikasi langsung saka responden.",
+        "answer": "Ya, aku ngerti basa lan setuju kanggo melu"
+    },
+    "kl" : {
+        "question": "Maluginiaruk: Misissuinerup taassuma \"oqaatsit\" atorlugit kisimi akissuteqarfigineqartariaqarpoq. Oqaatsit taakku ilisimasaqarfigilluarsimagukkit qinnuigissavakkit oqaatsit eqqortut atorlugit toqqagassaq ingerlaqqillutillu. Nonsense, nalinginnaasut aamma gibberish-imik akissuteqaatit tamarmik apersorneqartup toqqaannartumik disqualificerneqarneranut kinguneqassapput.",
+        "answer": "Aap, oqaatsit nalunngilakka aamma peqataanissara akuersaarpara"
+    },
+    "kn" : {
+        "question": "ದಯವಿಟ್ಟು ಗಮನಿಸಿ: ಈ ಸಮೀಕ್ಷೆಗೆ \"ಭಾಷೆ\" ಯಲ್ಲಿ ಮಾತ್ರ ಪ್ರತಿಕ್ರಿಯೆಯ ಅಗತ್ಯವಿದೆ. ನೀವು ಈ ಭಾಷೆಯನ್ನು ಚೆನ್ನಾಗಿ ತಿಳಿದಿದ್ದರೆ ದಯವಿಟ್ಟು ಸರಿಯಾದ ಭಾಷೆಯಲ್ಲಿ ಆಯ್ಕೆಯನ್ನು ಆರಿಸಿ ಮತ್ತು ಮುಂದುವರಿಯಿರಿ. ಎಲ್ಲಾ ಅಸಂಬದ್ಧ, ಒಂದೇ ರೀತಿಯ ಮತ್ತು ದಡ್ಡ ಪ್ರತಿಕ್ರಿಯೆಗಳು ಪ್ರತಿಕ್ರಿಯಿಸುವವರ ನೇರ ಅನರ್ಹತೆಗೆ ಕಾರಣವಾಗುತ್ತವೆ.",
+        "answer": "ಹೌದು, ನನಗೆ ಭಾಷೆ ತಿಳಿದಿದೆ ಮತ್ತು ಭಾಗವಹಿಸಲು ಒಪ್ಪುತ್ತೇನೆ"
+    },
+    "kr" : {
+        "question": "Notə: Sofiwo adə jaawuwa \"təlam\" baslan məradəzəna. Təlam adə zauro nozənaro waljiya daji təlam kalkallan karne kuru gozə kozəna. Jaawuwa batti-a, samun-a kuru gibberish-a sammasoye səkə jaawuwadəga kalkalro koljin.",
+        "answer": "Tawadǝ, wuye tǝlamdǝga nongǝna kuru kasatkǝna"
+    },
+    "kk" : {
+        "question": "Назар аударыңыз: бұл сауалнамаға тек «тілде» жауап қажет. Егер сіз осы тілді жақсы меңгерсеңіз, дұрыс тілдегі опцияны таңдап, жалғастырыңыз. Барлық мағынасыз, ұқсас және бос жауаптар респондентті тікелей дисквалификацияға әкеледі.",
+        "answer": "Иә, мен тілді білемін және қатысуға келісемін"
+    },
+    "km" : {
+        "question": "សូមចំណាំ៖ ការស្ទង់មតិនេះត្រូវការការឆ្លើយតបជា \"ភាសា\" ប៉ុណ្ណោះ។ ប្រសិនបើអ្នកយល់ច្បាស់ជាមួយភាសានេះ សូមជ្រើសរើសជម្រើសជាភាសាត្រឹមត្រូវ ហើយបន្ត។ រាល់ការឆ្លើយតបដែលមិនសមហេតុសមផល ស្រដៀងគ្នា និងអសុរោះនឹងនាំឱ្យអ្នកឆ្លើយត្រូវបាត់បង់សិទ្ធិដោយត្រង់។",
+        "answer": "បាទ ខ្ញុំចេះភាសា ហើយយល់ព្រមចូលរួម"
+    },
+    "rw" : {
+        "question": "Nyamuneka Icyitonderwa: Ubu bushakashatsi bukeneye igisubizo gusa \"mururimi\". Niba uzi neza uru rurimi noneho nyamuneka hitamo amahitamo mururimi rukwiye hanyuma ukomeze. Ibisubizo byose bidafite ishingiro, bisa na gibberish ibisubizo bizatuma umuntu atemerwa neza.",
+        "answer": "Nibyo, nzi ururimi kandi nemeye kubigiramo uruhare"
+    },
+    "ky" : {
+        "question": "Эскертүү: Бул сурамжылоого \"тилде\" гана жооп керек. Эгер сиз бул тилди жакшы билсеңиз, анда туура тилдеги опцияны тандап, улантыңыз. Бардык тантырак, окшош жана куру жооптор респонденттин түз дисквалификациясына алып келет.",
+        "answer": "Ооба, мен тил билем жана катышууга макулмун"
+    },
+    "kv" : {
+        "question": "Тӧдчӧдам: Тайӧ юалӧм вылӧ колӧ вочавидзны сӧмын \"кывйӧн\". Ті кӧ бура тӧдмалінныд тайӧ кывсӧ сэки, пожалуйста, бӧрйӧй вариантсӧ колана кывйӧн да мунӧй водзӧ. Став гӧльлуныс, ӧткодь да гӧльлуныс вайӧдас вочавидзысьӧс веськыд дисквалификацияӧ.",
+        "answer": "Да, ме тӧда кыв да сӧгласитча пырӧдчыны"
+    },
+    "ko" : {
+        "question": "참고: 이 설문조사는 \"언어\"로만 응답해야 합니다. 이 언어에 정통한 경우 올바른 언어 옵션을 선택하고 계속 진행하십시오. 말도 안되고, 유사하고, 횡설수설하는 모든 응답은 응답자의 자격을 바로 박탈하게 됩니다.",
+        "answer": "예, 언어를 알고 있으며 참여에 동의합니다."
+    },
+    "ku" : {
+        "question": "Ji kerema xwe not: Ji bo vê anketê bersiv tenê bi \"ziman\" hewce ye. Heke hûn bi vî zimanî baş dizanin, ji kerema xwe vebijarka bi zimanê rast hilbijêrin û bidomînin. Hemî bersivên bêwate, wekhev û gêj dê bibe sedema bêserûberkirina bersivdar.",
+        "answer": "Erê, ez bi zimanê xwe dizanim û ez qebûl dikim ku beşdar bibim"
+    },
+    "la" : {
+        "question": "Quaeso note: Haec circumspectio solum in \"lingua\" respondere debet. Si bene cum hac lingua versatus es, tum elige optionem in lingua recta et procede. Omnes ineptiae, similes et responsiones gibberosae, rectae partis conventae impossibilitatem inducent.",
+        "answer": "Ita linguam novi et consentio participare"
+    },
+    "lb" : {
+        "question": "Notéiert w.e.g.: Dës Ëmfro brauch nëmmen Äntwert op \"Sprooch\". Wann Dir gutt mat dëser Sprooch beherrscht sidd, wielt w.e.g. Optioun an der korrekter Sprooch a fuert weider. All Nonsense, ähnlech a gibberesch Äntwerte féieren zur direkter Disqualifikatioun vum Befroten.",
+        "answer": "Jo, ech kennen d'Sprooch an averstane matzemaachen"
+    },
+    "li" : {
+        "question": "Let op: Dit enquête heet allein in \"taal\" antwoorde nuudig. Es geer good vertrouwd zit mit deze taal, selecteer dan de optie in de gooje taol en gaon door. Alle nonsens, soortgelieke en onzinnige reacties zulle leie tot direkte diskwalificatie vaan de respondent.",
+        "answer": "Jao, ich kin de taol en ich bin ‘t akkoord um deil te nömme"
+    },
+    "ln" : {
+        "question": "Toyeba ete: Ankɛtɛ oyo esengeli na eyano kaka na \"monɔkɔ\". Soki oyebi malamu monoko oyo alors svp pona option na langue correcte pe kende liboso. Ba réponses nionso ya buzoba, ya ndenge moko pe ya ba gibberish ekosala que a disqualification droite ya répondant.",
+        "answer": "Ee, nayebi monɔkɔ yango mpe nandimi kosangana na yango"
+    },
+    "lo" : {
+        "question": "ກະ​ລຸ​ນາ​ບັນ​ທຶກ​: ການ​ສໍາ​ຫຼວດ​ນີ້​ຕ້ອງ​ການ​ຕອບ​ສະ​ຫນອງ​ພຽງ​ແຕ່ \"ພາ​ສາ​\"​. ຖ້າເຈົ້າຮູ້ພາສານີ້ໄດ້ດີແລ້ວ ກະລຸນາເລືອກທາງເລືອກໃນພາສາທີ່ຖືກຕ້ອງ ແລະດໍາເນີນການຕໍ່. ທຸກໆການຕອບໂຕ້ທີ່ບໍ່ສົມເຫດສົມຜົນ, ຄ້າຍຄືກັນແລະ gibberish ຈະນໍາໄປສູ່ການຕັດສິດຊື່ຂອງຜູ້ຕອບ.",
+        "answer": "ແມ່ນແລ້ວ, ຂ້ອຍຮູ້ພາສາແລະຕົກລົງທີ່ຈະເຂົ້າຮ່ວມ"
+    },
+    "lt" : {
+        "question": "Atkreipkite dėmesį: į šią apklausą reikia atsakyti tik „kalba“. Jei gerai mokate šią kalbą, pasirinkite parinktį tinkama kalba ir tęskite. Visi nesąmoningi, panašūs ir beprasmiški atsakymai sukels tiesioginį atsakovo diskvalifikavimą.",
+        "answer": "Taip, aš moku kalbą ir sutinku dalyvauti"
+    },
+    "lv" : {
+        "question": "Lūdzu, ņemiet vērā: šai aptaujai ir jāatbild tikai \"valodā\". Ja jūs labi pārzināt šo valodu, lūdzu, izvēlieties opciju pareizajā valodā un turpiniet. Visas muļķības, līdzīgas un nejēdzīgas atbildes izraisīs atbildētāja tiešu diskvalifikāciju.",
+        "answer": "Jā, es zinu valodu un piekrītu piedalīties"
+    },
+    "gv" : {
+        "question": "Tastey: Ta'n suashtal shoh feme freggyrtagh agh ayns \"çhengey\". Mannagh vel oo er n'eaishtagh rish y çhengey shoh, gow roshtyn ayns y çhengey cheart as gow er-ash. Ta ooilley ny freggyrtyn nonsense, cosoylagh as gibberish ry-gheddyn rish y freggyrtagh.",
+        "answer": "Ta, ta fys aym er y çhengey as ta mee goaill ayrn"
+    },
+    "mk" : {
+        "question": "Забележете: Оваа анкета бара одговор само на „јазик“. Ако сте добро запознаени со овој јазик, тогаш ве молиме изберете ја опцијата на правилен јазик и продолжете. Сите глупости, слични и глупости одговори ќе доведат до директно дисквалификација на испитаникот.",
+        "answer": "Да, го знам јазикот и се согласувам да учествувам"
+    },
+    "mg" : {
+        "question": "Mariho azafady: Ity fanadihadiana ity dia mila valiny amin'ny \"fiteny\" ihany. Raha mahay tsara an'io fiteny io ianao dia mifidiana safidy amin'ny fiteny marina ary tohizo. Ny valinteny tsy misy dikany rehetra, mitovitovy ary maneso dia hitarika ho amin'ny fanalana an-keriny an'ilay mpamaly.",
+        "answer": "Eny, haiko ilay fiteny ary manaiky handray anjara"
+    },
+    "ms" : {
+        "question": "Sila ambil perhatian: Tinjauan ini memerlukan jawapan hanya dalam \"bahasa\". Jika anda mahir dengan bahasa ini, sila pilih pilihan dalam bahasa yang betul dan teruskan. Semua jawapan karut, serupa dan mencarut akan membawa kepada kehilangan kelayakan langsung responden.",
+        "answer": "Ya, saya tahu bahasa itu dan bersetuju untuk mengambil bahagian"
+    },
+    "ml" : {
+        "question": "ദയവായി ശ്രദ്ധിക്കുക: ഈ സർവേയ്ക്ക് \"ഭാഷയിൽ\" മാത്രമേ പ്രതികരണം ആവശ്യമുള്ളൂ. നിങ്ങൾക്ക് ഈ ഭാഷ നന്നായി അറിയാമെങ്കിൽ, ദയവായി ശരിയായ ഭാഷയിലുള്ള ഓപ്ഷൻ തിരഞ്ഞെടുത്ത് തുടരുക. എല്ലാ അസംബന്ധവും സമാനവും വിഡ്ഢിത്തവുമായ പ്രതികരണങ്ങൾ പ്രതികരിക്കുന്നയാളെ നേരിട്ട് അയോഗ്യനാക്കുന്നതിലേക്ക് നയിക്കും.",
+        "answer": "അതെ, എനിക്ക് ഭാഷ അറിയാം, പങ്കെടുക്കാൻ സമ്മതിക്കുന്നു"
+    },
+    "mt" : {
+        "question": "Jekk jogħġbok innota: Dan l-istħarriġ jeħtieġ tweġiba biss fil-\"lingwa\". Jekk taf sew b'din il-lingwa, jekk jogħġbok agħżel l-għażla fil-lingwa korretta u kompli. It-tweġibiet kollha bla sens, simili u bla sens iwasslu għal skwalifika diretta tal-intimat.",
+        "answer": "Iva, naf il-lingwa u naqbel li nipparteċipa"
+    },
+    "mi" : {
+        "question": "Kia mahara: Me whakautu tenei rangahau i roto i te \"reo\" anake. Mena kei te tino mohio koe ki tenei reo katahi ka kowhiria te waahanga ki te reo tika ka haere tonu. Ko nga whakautu poauau katoa, nga whakautu rite me nga whakautu karekau ka arahi ki te whakakore tika i te kaiurupare.",
+        "answer": "Ae, kei te mohio ahau ki te reo me te whakaae ki te whakauru"
+    },
+    "mr" : {
+        "question": "कृपया लक्षात ठेवा: या सर्वेक्षणाला फक्त \"भाषेत\" प्रतिसाद आवश्यक आहे. जर तुम्हाला या भाषेचे चांगले ज्ञान असेल तर कृपया योग्य भाषेतील पर्याय निवडा आणि पुढे जा. सर्व मूर्खपणाचे, सारखे आणि निरर्थक प्रतिसादांमुळे प्रतिसादकर्त्याला सरळ अपात्र ठरवले जाईल.",
+        "answer": "होय, मला भाषा माहित आहे आणि मला सहभागी होण्यास सहमती आहे"
+    },
+    "mh" : {
+        "question": "Jouj im lale: Survey in ej aikuj uwaak ilo \"kajin\". Elañe kwoj lukkun jelā kajin in innem jouj im kãlet ilo kajin eo ejimwe im wõnmanlok. Aolep uwaak ko rejjab mol, einlok wõt im jab mol renaj tellok ñan an armij eo ej uwaak eo jako maroñ eo an.",
+        "answer": "Aet, ijelā kajin eo im ij errā in bōk koņaō"
+    },
+    "mn" : {
+        "question": "Анхаарна уу: Энэ судалгаанд зөвхөн \"хэл\"-ээр хариу өгөх шаардлагатай. Хэрэв та энэ хэлийг сайн мэддэг бол зөв хэл дээрх сонголтыг сонгоод үргэлжлүүлнэ үү. Бүх утгагүй, ижил төстэй, утгагүй хариултууд нь хариуцагчийн эрхийг шууд хасахад хүргэнэ.",
+        "answer": "Тийм ээ, би хэл мэддэг, оролцохыг зөвшөөрч байна"
+    },
+    "ne" : {
+        "question": "कृपया ध्यान दिनुहोस्: यो सर्वेक्षणलाई \"भाषा\" मा मात्र प्रतिक्रिया चाहिन्छ। यदि तपाईलाई यो भाषा राम्रोसँग थाहा छ भने कृपया सही भाषामा विकल्प चयन गर्नुहोस् र अगाडि बढ्नुहोस्। सबै बकवास, समान र मूर्ख प्रतिक्रियाहरूले उत्तरदाताको सीधा अयोग्यताको नेतृत्व गर्नेछ।",
+        "answer": "हो, म भाषा जान्दछु र भाग लिन सहमत छु"
+    },
+    "nb" : {
+        "question": "Vennligst merk: Denne undersøkelsen trenger kun svar på \"språk\". Hvis du er godt kjent med dette språket, velg alternativet på riktig språk og fortsett. Alt tull, lignende og useriøse svar vil føre til direkte diskvalifikasjon av respondenten.",
+        "answer": "Ja, jeg kan språket og godtar å delta"
+    },
+    "no" : {
+        "question": "Vennligst merk: Denne undersøkelsen trenger kun svar på \"språk\". Hvis du er godt kjent med dette språket, velg alternativet på riktig språk og fortsett. Alt tull, lignende og useriøse svar vil føre til direkte diskvalifikasjon av respondenten.",
+        "answer": "Ja, jeg kan språket og godtar å delta"
+    },
+    "nr" : {
+        "question": "Sibawa uqaphele: Irhubhululo leli litlhoga ipendulo \"ngelimi\" kwaphela. Nawukwazi kuhle ilimi leli, sibawa ukhethe okukhethwa ngelimi elifaneleko bese uragela phambili. Zoke iimpendulo ezingasizi ngalitho, ezifanako nezingakaqakatheki zizokurholela ekutheni ummangalelwa angafaneleki.",
+        "answer": "Iye, ngiyalwazi ilimi begodu ngiyavuma ukuzibandakanya"
+    },
+    "oc" : {
+        "question": "Atencion: Aqueste sondatge a besonh de responsas sonque en \"lenga\". Se sètz plan versat amb aquesta lenga, mercés de seleccionar l'opcion dins la lenga corrècta e de contunhar. Totas las responsas de dissòrdis, similaras e de vagabons menaràn a una desqualificacion dirècta de l'enquestat.",
+        "answer": "Òc, coneissi la lenga e accepti de i participar"
+    },
+    "om" : {
+        "question": "Hubadhaa: Qorannoon kun deebii barbaada \"afaan\" qofa. Yoo afaan kana sirriitti beektan ta'e mee filannoo afaan sirrii ta'een filadhaatii itti fufaa. Deebiin waanuma hin taane, walfakkaataa fi jechoota hin taane hundi deebii kennaan kallattiin ulaagaa guutuu akka hin qabne taasisa.",
+        "answer": "Eeyyee afaanicha beekee hirmaachuuf walii gala"
+    },
+    "or" : {
+        "question": "ଦୟାକରି ଧ୍ୟାନ ଦିଅନ୍ତୁ: ଏହି ସର୍ଭେ କେବଳ \"ଭାଷା\" ରେ ପ୍ରତିକ୍ରିୟା ଆବଶ୍ୟକ କରେ | ଯଦି ଆପଣ ଏହି ଭାଷା ସହିତ ଭଲଭାବେ ଜାଣିଛନ୍ତି ତେବେ ଦୟାକରି ସଠିକ୍ ଭାଷାରେ ବିକଳ୍ପ ଚୟନ କରନ୍ତୁ ଏବଂ ଅଗ୍ରଗତି କରନ୍ତୁ | ସମସ୍ତ ନିର୍ବୋଧ, ସମାନ ଏବଂ ଜବରଦସ୍ତ ପ୍ରତିକ୍ରିୟା ଉତ୍ତରଦାତାଙ୍କୁ ସିଧାସଳଖ ଅଯୋଗ୍ୟତା ଆଣିବ |",
+        "answer": "ହଁ, ମୁଁ ଭାଷା ଜାଣେ ଏବଂ ଏଥିରେ ଭାଗ ନେବାକୁ ରାଜି ଅଟେ |"
+    },
+    "os" : {
+        "question": "Дæ хорзæхæй, бафиппай: Ацы æрфарстæн дзуапп хъæуы æрмæстдæр «æвзагыл». Кæд хорз зоныс ацы æвзаг, уæд равзар раст æвзагыл æмæ дарддæр кæн. Æппæт æнæхъуаджы, æнгæс æмæ æнæзонд дзуаппытæ æркæндзысты дзуапдæттæджы комкоммæ дисквалификацимæ.",
+        "answer": "О, æз зонын æвзаг æмæ сразы дæн архайыныл"
+    },
+    "pa" : {
+        "question": "ਕਿਰਪਾ ਕਰਕੇ ਨੋਟ ਕਰੋ: ਇਸ ਸਰਵੇਖਣ ਨੂੰ ਸਿਰਫ਼ \"ਭਾਸ਼ਾ\" ਵਿੱਚ ਜਵਾਬ ਦੀ ਲੋੜ ਹੈ। ਜੇਕਰ ਤੁਸੀਂ ਇਸ ਭਾਸ਼ਾ ਤੋਂ ਚੰਗੀ ਤਰ੍ਹਾਂ ਜਾਣੂ ਹੋ ਤਾਂ ਕਿਰਪਾ ਕਰਕੇ ਸਹੀ ਭਾਸ਼ਾ ਵਿੱਚ ਵਿਕਲਪ ਚੁਣੋ ਅਤੇ ਅੱਗੇ ਵਧੋ। ਸਾਰੇ ਬਕਵਾਸ, ਸਮਾਨ ਅਤੇ ਬੇਤੁਕੇ ਜਵਾਬ ਜਵਾਬ ਦੇਣ ਵਾਲੇ ਦੀ ਸਿੱਧੀ ਅਯੋਗਤਾ ਵੱਲ ਲੈ ਜਾਣਗੇ।",
+        "answer": "ਹਾਂ, ਮੈਂ ਭਾਸ਼ਾ ਜਾਣਦਾ ਹਾਂ ਅਤੇ ਭਾਗ ਲੈਣ ਲਈ ਸਹਿਮਤ ਹਾਂ"
+    },
+    "fa" : {
+        "question": "لطفا توجه داشته باشید: این نظرسنجی فقط به \"زبان\" پاسخ نیاز دارد. اگر به خوبی با این زبان آشنا هستید، لطفاً گزینه را به زبان صحیح انتخاب کنید و ادامه دهید. تمام پاسخ های بیهوده، مشابه و بیهوده منجر به رد صلاحیت مستقیم پاسخ دهنده خواهد شد.",
+        "answer": "بله، من زبان را می دانم و موافقم که شرکت کنم"
+    },
+    "pl" : {
+        "question": "Uwaga: w tej ankiecie należy udzielić odpowiedzi wyłącznie w „języku”. Jeśli dobrze znasz ten język, wybierz opcję w odpowiednim języku i kontynuuj. Wszelkie bzdurne, podobne i bełkotliwe odpowiedzi będą prowadziły do ​​bezpośredniej dyskwalifikacji respondenta.",
+        "answer": "Tak, znam język i wyrażam zgodę na udział"
+    },
+    "ps" : {
+        "question": "مهرباني وکړئ په یاد ولرئ: دا سروې یوازې په \"ژبه\" کې ځواب ته اړتیا لري. که تاسو د دې ژبې سره بلد یاست نو مهرباني وکړئ په سمه ژبه کې اختیار غوره کړئ او پرمخ لاړشئ. ټول احمقانه، ورته او بې ځایه ځوابونه به د ځواب ورکوونکي مستقیم بې کفایتۍ لامل شي.",
+        "answer": "هو، زه په ژبه پوهیږم او د ګډون لپاره موافق یم"
+    },
+    "pt" : {
+        "question": "Observação: esta pesquisa precisa de resposta apenas em \"idioma\". Se você conhece bem esse idioma, selecione a opção no idioma correto e prossiga. Todas as respostas sem sentido, semelhantes e sem sentido levarão à desqualificação direta do entrevistado.",
+        "answer": "Sim, conheço o idioma e concordo em participar"
+    },
+    "qu" : {
+        "question": "Ama hina kaspa, kayta qhaway: Kay tapukuyqa \"simillapi\" kutichiyta necesitan. Sichus allinta yachanki kay simita chaymanta ama hina kaspa akllay akllanata allin simipi hinaspa puririy. Tukuy mana yuyayniyuq, rikchakuq, mana yuyayniyuq kutichiykunam tapusqapa chiqan descalificacionninman apakunqa.",
+        "answer": "Arí, chay simita yachani, chaypi participanaypaqtaqmi acuerdopi kani"
+    },
+    "rm" : {
+        "question": "Tehara: Akava anketa trubul te del atùnći respònso numaj anθ-i \"ćhib\". Te san mishto prinźardo kadaja ćhib, atunć mangav tut te alosares i opcia anθ-i laćhi ćhib thaj te źas maj dur. Sa e bi-lačhe, similarno thaj bi-lačhe atùnćimata ka anen jekh ćaćutno diskvalifikàcia e respondentosqi.",
+        "answer": "Da, me džanav i ćhib thaj me dav duma te lav kotor"
+    },
+    "rn" : {
+        "question": "Iyumvire: Ubu bushakashatsi bukeneye inyishu gusa mu \"rurimi\". Niba uzi neza uru rurimi rero usabwe guhitamwo option mu rurimi rwiza maze ugende. Inyishu zose z’ubujuju, zisa n’izo kandi z’ubujuju zizotuma uwuriko arasubiza akurwa mu buryo bugororotse.",
+        "answer": "Ego, ndazi ururimi kandi nemera kugira uruharamwo"
+    },
+    "ro" : {
+        "question": "Vă rugăm să rețineți: acest sondaj necesită răspuns numai în „limbă”. Dacă sunteți bine versat cu această limbă, atunci vă rugăm să selectați opțiunea în limba corectă și să continuați. Toate răspunsurile prostii, similare și farfurii vor duce la descalificarea directă a respondentului.",
+        "answer": "Da, cunosc limba și sunt de acord să particip"
+    },
+    "ru" : {
+        "question": "Обратите внимание: на этот опрос требуется ответ только на «языке». Если вы хорошо владеете этим языком, выберите вариант на правильном языке и продолжайте. Всякая ерунда, похожие и бредовые ответы приведут к прямой дисквалификации респондента.",
+        "answer": "Да, я знаю язык и согласен участвовать"
+    },
+    "sa" : {
+        "question": "कृपया ज्ञातव्यं यत्: अस्मिन् सर्वेक्षणे केवलं \"भाषायां\" प्रतिक्रिया आवश्यकी अस्ति। यदि भवान् अस्याः भाषायाः सुपरिचितः अस्ति तर्हि कृपया सम्यक् भाषायां विकल्पं चित्वा अग्रे गच्छतु। सर्वाणि बकवासाः, समानानि, व्यङ्ग्यं च प्रतिक्रियाः प्रतिवादीनां सीधा अयोग्यतां जनयिष्यन्ति।",
+        "answer": "आम्, अहं भाषां जानामि, भागं ग्रहीतुं च सहमतः अस्मि"
+    },
+    "sd" : {
+        "question": "مهرباني ڪري نوٽ ڪريو: هن سروي کي صرف \"ٻولي\" ۾ جواب جي ضرورت آهي. جيڪڏھن توھان کي ھن ٻوليءَ جي چڱيءَ طرح ڄاڻ آھي ته مھرباني ڪري صحيح ٻولي ۾ اختيار چونڊيو ۽ اڳتي وڌو. تمام بيوقوف، هڪجهڙا ۽ بيوقوف جواب جواب ڏيڻ واري جي سڌي طرح نااهليءَ جو سبب بڻجندا.",
+        "answer": "ها، مان ٻولي ڄاڻان ٿو ۽ حصو وٺڻ تي متفق آهيان"
+    },
+    "se" : {
+        "question": "Fuomáš: Dát jearahallan gáibida vástádusa dušše \"gillii\". Jus leat bures hárjánan dán giela de vállje opšuvnna rivttes gillii ja joatkit. Buot čáppa, sullasaš ja čáppa vástádusat dagahit ahte vástideaddji njuolga diskvalifiserejuvvo.",
+        "answer": "Juo, mun máhtán giela ja mieđihan searvat"
+    },
+    "sm" : {
+        "question": "Faamolemole ia matau: O lenei su'esu'ega e mana'omia na'o le \"gagana\". Afai e te malamalama lelei i lenei gagana fa'amolemole filifili le filifiliga ile gagana sa'o ma fa'aauau. O tali fa'avalevalea uma, tali fa'atusa ma fa'atautala o le a ta'u'esea sa'o ai lē ua tete'e.",
+        "answer": "Ioe, ou te iloa le gagana ma ioe e auai"
+    },
+    "sg" : {
+        "question": "Zia e hinga so: Enquête so ahunda kiringo tënë gi na \"yanga ti kodoro\". Tongana mo hinga yanga ti kodoro so nzoni, soro option na yanga ti kodoro so alingbi na mo gue na li ni. Akiringo tënë kue so ayeke senge senge, so ayeke legeoko nga na atënë ti buba ayeke gue na zo so a hunda tënë na lo ti sara kua pëpe.",
+        "answer": "Biani, mbi hinga yanga ti kodoro ni na mbi yeda ti mû mbage na ni ."
+    },
+    "sr" : {
+        "question": "Имајте на уму: на ову анкету је потребан одговор само на „језику“. Ако сте добро упућени у овај језик, изаберите опцију на исправном језику и наставите. Све глупости, слични и брбљави одговори ће довести до директне дисквалификације испитаника.",
+        "answer": "Да, знам језик и слажем се да учествујем"
+    },
+    "gd" : {
+        "question": "Thoir an aire: Feumaidh an suirbhidh seo freagairt ann an \"cànan\" a-mhàin. Ma tha thu eòlach air a’ chànan seo tagh an roghainn anns a’ chànan cheart agus lean air adhart. Bidh a h-uile freagairt neonach, coltach agus gibberish a’ leantainn gu dì-cheadachadh dìreach an neach-freagairt.",
+        "answer": "Tha, tha mi eòlach air a’ chànan agus tha mi ag aontachadh pàirt a ghabhail"
+    },
+    "sn" : {
+        "question": "Ndokumbira utarise: Ongororo iyi inoda mhinduro chete mu \"mutauro\". Kana uchinyatsoziva mutauro uyu saka ndapota sarudza sarudzo mumutauro chaiwo woenderera mberi. Zvese zvisina maturo, zvakafanana uye gibberish mhinduro zvinozotungamira mukuregedzerwa kweanopindura.",
+        "answer": "Hongu, ndinoziva mutauro wacho uye ndinobvuma kutora chikamu"
+    },
+    "si" : {
+        "question": "කරුණාකර සටහන් කරන්න: මෙම සමීක්ෂණයට ප්‍රතිචාර අවශ්‍ය වන්නේ \"භාෂාවෙන්\" පමණි. ඔබ මෙම භාෂාව හොඳින් දන්නා අයෙක් නම් කරුණාකර නිවැරදි භාෂාවෙන් විකල්පය තෝරා ඉදිරියට යන්න. සියලුම විකාර, සමාන සහ නීච ප්‍රතිචාර වගඋත්තරකරුගේ සෘජු නුසුදුස්සකු වීමට තුඩු දෙනු ඇත.",
+        "answer": "ඔව්, මම භාෂාව දන්නා අතර සහභාගී වීමට එකඟ වෙමි"
+    },
+    "sk" : {
+        "question": "Poznámka: Tento prieskum vyžaduje odpoveď iba v „jazyku“. Ak sa v tomto jazyku dobre vyznáte, vyberte možnosť v správnom jazyku a pokračujte. Všetky nezmysly, podobné a nezmyselné odpovede povedú k priamej diskvalifikácii respondenta.",
+        "answer": "Áno, ovládam jazyk a súhlasím s účasťou"
+    },
+    "sl" : {
+        "question": "Prosimo, upoštevajte: Ta anketa zahteva odgovor samo v \"jeziku\". Če ste dobro seznanjeni s tem jezikom, izberite možnost v pravilnem jeziku in nadaljujte. Vsi nesmiselni, podobni in nesmiselni odgovori bodo vodili do neposredne diskvalifikacije anketiranca.",
+        "answer": "Da, znam jezik in se strinjam s sodelovanjem"
+    },
+    "so" : {
+        "question": "Fadlan ogow: Sahankan wuxuu u baahan yahay jawaab \"luqadda\" kaliya. Haddii aad luqaddan si fiican u taqaan, fadlan dooro ikhtiyaar luqad sax ah oo sii wad. Dhammaan jawaabaha macno-darrada ah, kuwa la midka ah iyo kuwa been abuurka ah waxay u horseedi doonaan diidmo toos ah jawaab-bixiyaha.",
+        "answer": "Haa, waan aqaanaa luqadda waxaanan oggolahay inaan ka qaybqaato"
+    },
+    "st" : {
+        "question": "Ka kopo hlokomela: Tlhahlobo ena e hloka karabo feela ka \"puo\". Haeba u tseba puo ena hantle, ka kopo khetha khetho ka puo e nepahetseng ebe u tsoela pele. Likarabo tsohle tse se nang thuso, tse tšoanang le tse sa utloahaleng li tla lebisa ho se tšoaneleheng ha moqosuoa.",
+        "answer": "Ee, ke tseba puo mme ke dumela ho nka karolo"
+    },
+    "es" : {
+        "question": "Tenga en cuenta: esta encuesta necesita respuesta sólo en \"idioma\". Si domina este idioma, seleccione la opción en el idioma correcto y continúe. Todas las respuestas sin sentido, similares y galimatías darán lugar directamente a la descalificación del encuestado.",
+        "answer": "Sí, conozco el idioma y acepto participar."
+    },
+    "su" : {
+        "question": "Perhatikeun: Survei ieu peryogi waleran dina \"basa\". Upami anjeun versed sareng basa ieu, mangga pilih pilihan dina basa anu leres sareng teraskeun. Kabéh omong kosong, réspon sarupa jeung gibberish bakal ngakibatkeun disqualification langsung tina réspondén.",
+        "answer": "Sumuhun, abdi terang basa jeung satuju pikeun ilubiung"
+    },
+    "sw" : {
+        "question": "Tafadhali kumbuka: Utafiti huu unahitaji majibu katika \"lugha\" pekee. Ikiwa unafahamu lugha hii vizuri basi tafadhali chagua chaguo katika lugha sahihi na uendelee. Majibu yote ya upuuzi, yanayofanana na ya kihuni yatasababisha kutostahiki moja kwa moja kwa mhojiwa.",
+        "answer": "Ndiyo, ninajua lugha na ninakubali kushiriki"
+    },
+    "ss" : {
+        "question": "Sicela wati: Loluhlolo ludzinga imphendvulo \"ngelulwimi\" kuphela. Uma ngabe uluti kahle lolulwimi sicela ukhetse inketho ngelulwimi lolulungile bese uyachubeka. Tonkhe timphendvulo letingenamsebenti, letifanako naletingekho emtsetfweni titawuholela ekuyekelweni lokucondzile kwemmangalelwa.",
+        "answer": "Yebo, ngiyalati lulwimi futsi ngiyavuma kuhlanganyela"
+    },
+    "sv" : {
+        "question": "Observera: Denna undersökning behöver endast besvaras på \"språk\". Om du är väl insatt i detta språk, välj alternativet på rätt språk och fortsätt. Alla nonsens, liknande och tramsiga svar kommer att leda till direkt diskvalificering av respondenten.",
+        "answer": "Ja, jag kan språket och accepterar att delta"
+    },
+    "te" : {
+        "question": "దయచేసి గమనించండి: ఈ సర్వేకు \"భాష\"లో మాత్రమే ప్రతిస్పందన అవసరం. మీరు ఈ భాషలో బాగా ప్రావీణ్యం కలిగి ఉంటే, దయచేసి సరైన భాషలో ఎంపికను ఎంచుకుని, కొనసాగండి. అన్ని అర్ధంలేని, సారూప్య మరియు అసంబద్ధమైన ప్రతిస్పందనలు ప్రతివాది యొక్క నేరుగా అనర్హతకు దారి తీస్తుంది.",
+        "answer": "అవును, నాకు భాష తెలుసు మరియు పాల్గొనడానికి అంగీకరిస్తున్నాను"
+    },
+    "tg" : {
+        "question": "Лутфан таваҷҷӯҳ намоед: Ин пурсиш танҳо ба \"забон\" ҷавоб додан лозим аст. Агар шумо бо ин забон хуб донед, лутфан интихобро бо забони дуруст интихоб кунед ва идома диҳед. Ҳама ҷавобҳои бемаънӣ, шабеҳ ва бемаънӣ боиси бекор кардани мусоҳиб мегардад.",
+        "answer": "Бале, ман забонро медонам ва розӣ ҳастам, ки иштирок кунам"
+    },
+    "th" : {
+        "question": "โปรดทราบ: แบบสำรวจนี้ต้องการคำตอบเป็น \"ภาษา\" เท่านั้น หากคุณเชี่ยวชาญภาษานี้เป็นอย่างดี โปรดเลือกตัวเลือกในภาษาที่ถูกต้องและดำเนินการต่อ คำตอบที่ไร้สาระ คล้ายกัน และพูดพล่อยๆ ทั้งหมดจะนำไปสู่การตัดสิทธิ์ของผู้ถูกกล่าวหาทันที",
+        "answer": "ใช่ ฉันรู้ภาษาและตกลงที่จะเข้าร่วม"
+    },
+    "ti" : {
+        "question": "ኣስተውዕል: እዚ መጽናዕቲ ብ\"ቋንቋ\" ጥራይ መልሲ የድልዮ። ነዚ ቋንቋ ጽቡቕ ጌርኩም ትፈልጥዎ እንተኾይንኩም ሽዑ በጃኹም ብትኽክለኛ ቋንቋ ኣማራጺ ምረጽ እሞ ቀጽሉ። ኩሉ ዕሽነት፣ ተመሳሳልን ዕሽነት ዝመልኦን መልስታት ነቲ መልሲ ዝሃበ ብቐጥታ ካብ ብቕዓት ምእላይ ከስዕብ እዩ።",
+        "answer": "እወ ኣነ ቋንቋ እፈልጥ እየ ክሳተፍ ድማ ይሰማማዕ እየ"
+    },
+    "bo" : {
+        "question": "དྲན་སྐུལ། བརྟག་དཔྱད་འདི་ལ་ལན་འདེབས་དགོས་པ་ནི་\"སྐད་ཡིག\"ཁོ་ན་ཡིན། གལ་ཏེ་ཁྱེད་རང་སྐད་ཡིག་འདི་ལ་མཁས་པ་ཡིན་ན། སྐད་ཡིག་ཡང་དག་ནང་གདམ་ག་འདེམས་ནས་མུ་མཐུད་དུ་འགྲོ་རོགས། བེད་མེད་དང་འདྲ་མཚུངས་དང་བེད་མེད་ཀྱི་ལན་འདེབས་ཚང་མས་ལན་འདེབས་མཁན་ལ་ཐད་ཀར་ཆ་རྐྱེན་མེད་པར་བཟོ་རྒྱུ་རེད།",
+        "answer": "རེད། ངས་སྐད་ཡིག་ཤེས་པ་དང་མཉམ་ཞུགས་བྱེད་པར་མོས་མཐུན་ཡོད།"
+    },
+    "tk" : {
+        "question": "Üns beriň: Bu anketa diňe \"dilde\" jogap gerek. Bu dili gowy bilýän bolsaňyz, dogry dilde opsiýany saýlaň we dowam ediň. Nhli bolgusyz, şuňa meňzeş we gödek jogaplar jogap berijiniň göni diskvalifikasiýasyna getirer.",
+        "answer": "Hawa, dili bilýärin we gatnaşmaga razy"
+    },
+    "tl" : {
+        "question": "Pakitandaan: Ang survey na ito ay nangangailangan lamang ng tugon sa \"wika\". Kung bihasa ka sa wikang ito, mangyaring pumili ng opsyon sa tamang wika at magpatuloy. Ang lahat ng walang kapararakan, katulad at walang kwentang tugon ay hahantong sa tuwid na diskwalipikasyon ng respondent.",
+        "answer": "Oo, alam ko ang wika at sumasang-ayon akong lumahok"
+    },
+    "tn" : {
+        "question": "Tsweetswee ela tlhoko: Patlisiso eno e tlhoka karabo fela ka \"puo\". Fa o itse puo eno sentle, tsweetswee tlhopha tlhopho ka puo e e nepagetseng mme o tswelele. Dikarabo tsotlhe tse di senang mosola, tse di tshwanang le tse di sa reng sepe di tla dira gore moikarabedi a se ka a tshwanelega ka tlhamalalo.",
+        "answer": "Ee, ke itse puo mme ke dumela go nna le seabe"
+    },
+    "tr" : {
+        "question": "Lütfen unutmayın: Bu anketin yalnızca \"dilde\" yanıtlanması gerekmektedir. Bu dili iyi biliyorsanız lütfen doğru dildeki seçeneği seçin ve devam edin. Tüm saçma, benzer ve anlamsız yanıtlar, yanıtlayanın doğrudan diskalifiye edilmesine yol açacaktır.",
+        "answer": "Evet, dili biliyorum ve katılmayı kabul ediyorum"
+    },
+    "ts" : {
+        "question": "Hi kombela mi xiya: Ndzavisiso lowu wu lava nhlamulo ntsena hi \"ririmi\". Loko u ri tiva kahle ririmi leri kutani hi kombela u hlawula option hi ririmi lerinene ivi u ya emahlweni. Tinhlamulo hinkwato ta vuhunguki, to fana na ta vuhunguki ti ta endla leswaku muvutisiwa a nga faneleki hi ku kongoma.",
+        "answer": "Ina, ndza ri tiva ririmi naswona ndza pfumela ku hlanganyela"
+    },
+    "tt" : {
+        "question": "Зинһар, игътибар итегез: бу сораштыруга \"телдә\" җавап кирәк. Әгәр дә сез бу телне яхшы белсәгез, зинһар, дөрес телдә вариантны сайлагыз һәм дәвам итегез. Барлык мәгънәсез, охшаш һәм гайбәт җаваплары респондентның туры дисквалификациясенә китерәчәк.",
+        "answer": "Әйе, мин телне беләм һәм катнашырга риза"
+    },
+    "tw" : {
+        "question": "Yɛsrɛ sɛ hyɛ no nsow: Saa nhwehwɛmu yi hia mmuae wɔ \"kasa\" mu nkutoo. Sɛ wo nim kasa yi yiye a, ɛnde yɛsrɛ wo paw option wɔ kasa a ɛteɛ mu na kɔ so. Mmuae a ɛyɛ nkwaseasɛm, nea ɛte saa ara ne nea ɛyɛ kasafĩ nyinaa bɛma wɔabu nea wɔrebua no no tẽẽ.",
+        "answer": "Yiw, minim kasa no na mepene so sɛ mede me ho bɛhyɛ mu"
+    },
+    "ty" : {
+        "question": "A haamana'o na: E mea titauhia te pahonoraa na roto noa i teie uiuiraa \" reo \". Mai te mea e, ua matau maitai outou i teie reo, a maiti i te maitiraa na roto i te reo ti'a e a haere i mua. E faatupu te mau pahonoraa maamaa atoa, te mau pahonoraa mai te reira te huru, e te mau pahonoraa maamaa i te faainoraa oioi i te taata pahono.",
+        "answer": "Oia mau, ua ite au i te reo e ua farii au i te amui atu"
+    },
+    "ug" : {
+        "question": "دىققەت قىلىڭ: بۇ تەكشۈرۈش پەقەت «تىل» دا جاۋابقا موھتاج. ئەگەر سىز بۇ تىلنى پىششىق بىلىدىغان بولسىڭىز ، توغرا تىلدىكى تاللاشنى تاللاڭ ۋە داۋاملاشتۇرۇڭ. بارلىق بىمەنە ، ئوخشىشىپ كېتىدىغان ۋە كىشىنى ھەيران قالدۇرىدىغان جاۋابلار زىيارەت قىلىنغۇچىنىڭ بىۋاسىتە لاياقەتسىزلىكىنى كەلتۈرۈپ چىقىرىدۇ.",
+        "answer": "شۇنداق ، مەن تىلنى بىلىمەن ھەمدە قاتنىشىشقا قوشۇلىمەن"
+    },
+    "uk" : {
+        "question": "Будь ласка, зверніть увагу: це опитування потребує відповідей лише \"мовою\". Якщо ви добре знаєте цю мову, виберіть варіант правильною мовою та продовжуйте. Усі безглузді, подібні та тарабарські відповіді призведуть до прямої дискваліфікації респондента.",
+        "answer": "Так, я знаю мову і згоден брати участь"
+    },
+    "ur" : {
+        "question": "براہ کرم نوٹ کریں: اس سروے کو صرف \"زبان\" میں جواب کی ضرورت ہے۔ اگر آپ کو اس زبان پر عبور حاصل ہے تو براہ کرم صحیح زبان میں آپشن منتخب کریں اور آگے بڑھیں۔ تمام بیہودہ، ملتے جلتے اور فضول جوابات جواب دہندہ کی براہ راست نااہلی کا باعث بنیں گے۔",
+        "answer": "ہاں، میں زبان جانتا ہوں اور حصہ لینے سے اتفاق کرتا ہوں۔"
+    },
+    "uz" : {
+        "question": "E'tibor bering: bu so'rovnoma faqat \"tilda\" javob berishi kerak. Agar siz ushbu tilni yaxshi bilsangiz, iltimos, to'g'ri tildagi variantni tanlang va davom eting. Barcha bema'nilik, o'xshash va bema'ni javoblar respondentning to'g'ridan-to'g'ri diskvalifikatsiyasiga olib keladi.",
+        "answer": "Ha, men tilni bilaman va ishtirok etishga roziman"
+    },
+    "ve" : {
+        "question": "Kha vha dzhiele nzhele: Tsenguluso iyi i ṱoḓa phindulo nga \"luambo\" fhedzi. Arali ni tshi ḓivha zwavhuḓi luambo ulwu kha vha khethe khetho nga luambo lwo teaho vha bvele phanḓa. Phindulo dzoṱhe dzi si na mushumo, dzi fanaho na dza gibberish dzi ḓo ita uri mufhinduli a sa fanelee nga ho livhaho.",
+        "answer": "Ee, ndi a ḓivha luambo nahone ndi a tenda u shela mulenzhe"
+    },
+    "vi" : {
+        "question": "Xin lưu ý: Cuộc khảo sát này chỉ cần phản hồi bằng \"ngôn ngữ\". Nếu bạn thông thạo ngôn ngữ này thì vui lòng chọn tùy chọn bằng ngôn ngữ chính xác và tiếp tục. Tất cả những câu trả lời vô nghĩa, tương tự và vô nghĩa sẽ dẫn đến việc bị loại trực tiếp.",
+        "answer": "Có, tôi biết ngôn ngữ và đồng ý tham gia"
+    },
+    "cy" : {
+        "question": "Sylwer: Dim ond mewn \"iaith\" y mae angen ymateb i'r arolwg hwn. Os ydych chi'n gyfarwydd â'r iaith hon, dewiswch yr opsiwn yn yr iaith gywir ac ewch ymlaen. Bydd pob ymateb nonsens, tebyg a gewraidd yn arwain at ddiarddel yr atebydd yn syth.",
+        "answer": "Ydw, rwy'n gwybod yr iaith ac yn cytuno i gymryd rhan"
+    },
+    "wo" : {
+        "question": "Ngeen bàyyi xel ci lii: Laajte bii soxla tontu ci \"làkk\" kese. Soo xamee làkk wii bu baax, tannal tànneef ci làkk wi war nga dem. Bépp tontu bu amul benn njariñ, bu nuru loolu ak bu amul benn njariñ dina tax ñu dàq tontukat bi ci saasi.",
+        "answer": "Waaw, xamnaa làkk wi te nangu naa ci bokk"
+    },
+    "fy" : {
+        "question": "Tink derom: Dizze enkête hat allinich antwurd nedich yn \"taal\". As jo ​​​​goed fertroud binne mei dizze taal, selektearje dan de opsje yn juste taal en gean troch. Alle ûnsin, ferlykbere en rommelige antwurden sille liede ta direkte diskwalifikaasje fan 'e respondint.",
+        "answer": "Ja, ik kin de taal en gean akkoart mei mei te dwaan"
+    },
+    "xh" : {
+        "question": "Nceda uqaphele: Olu phando lufuna impendulo kuphela \"ngolwimi\". Ukuba ululwazi kakuhle olu lwimi ngoko nceda ukhethe ukhetho ngolwimi oluchanekileyo kwaye uqhubeke. Zonke iimbudane, iimpendulo ezifanayo kunye nezobubhanxa ziya kukhokelela ekukhutshweni okuthe ngqo kommangalelwa.",
+        "answer": "Ewe, ndiyalwazi ulwimi kwaye ndiyavuma ukuthatha inxaxheba"
+    },
+    "yi" : {
+        "question": "ביטע טאָן: די יבערבליק דאַרף ענטפער בלויז אין \"שפּראַך\". אויב איר זענט געזונט באַקאַנט מיט דעם שפּראַך, ביטע סעלעקטירן דעם אָפּציע אין די ריכטיק שפּראַך און פאָרזעצן. אַלע ומזין, ענלעך און גיבבעריש רעספּאָנסעס וועט פירן צו גלייך דיסקוואַלאַפאַקיישאַן פון די ענטפערער.",
+        "answer": "יא, איך קען די שפּראַך און שטימען צו אָנטייל נעמען"
+    },
+    "yo" : {
+        "question": "Jọwọ ṣakiyesi: Iwadi yii nilo esi nikan ni “ede”. Ti o ba ni oye daradara pẹlu ede yii jọwọ yan aṣayan ni ede ti o pe ki o tẹsiwaju. Gbogbo ọrọ isọkusọ, iru ati awọn idahun gibberish yoo ja si aibikita taara ti oludahun.",
+        "answer": "Bẹẹni, Mo mọ ede ati gba lati kopa"
+    },
+    "zu" : {
+        "question": "Sicela uqaphele: Le nhlolovo idinga impendulo kuphela \"ngolimi\". Uma ulwazi kahle lolu limi sicela ukhethe inketho ngolimi olufanele bese uqhubeka. Wonke umbhedo, izimpendulo ezifanayo nezimbi zizoholela ekukhishweni okuqondile kommangalelwa.",
+        "answer": "Yebo, ngiyalwazi ulimi futhi ngiyavuma ukubamba iqhaza"
+    },
+    "ta" : {
+        "question": "தயவுசெய்து கவனிக்கவும்: இந்த கருத்துக்கணிப்புக்கு \"மொழியில்\" மட்டுமே பதில் தேவை. நீங்கள் இந்த மொழியை நன்கு அறிந்திருந்தால், தயவுசெய்து சரியான மொழியில் விருப்பத்தைத் தேர்ந்தெடுத்து தொடரவும். அனைத்து முட்டாள்தனமான, ஒரே மாதிரியான மற்றும் முட்டாள்தனமான பதில்கள் பதிலளிப்பவரின் நேராக தகுதி நீக்கத்திற்கு வழிவகுக்கும்.",
+        "answer": "ஆம், எனக்கு மொழி தெரியும், பங்கேற்க ஒப்புக்கொள்கிறேன்"
+    },
+    "doi" : {
+        "question": "कृपा करियै ध्यान देओ: इस सर्वेक्षण गी सिर्फ \"भाशा\" च गै जवाब दी लोड़ ऐ। जेकर तुस इस भाशा कन्नै खरी चाल्ली जानकार ओ तां कृपा करियै सही भाशा च विकल्प चुनो ते अग्गें बधो। सारे बकवास, समान ते बकवास प्रतिक्रियाएं कन्नै प्रतिवादी गी सीधे अयोग्य ठहराया जाग।",
+        "answer": "हां, मैं भाशा जानना आं ते हिस्सा लैने लेई राजी आं"
+    },
+    "kok" : {
+        "question": "उपकार करून लक्षांत दवरात: ह्या सर्वेक्षणाक फकत \"भाशेंत\" प्रतिसाद जाय. तुमकां हे भाशेची बरी जाणविकाय आसल्यार मागीर उपकार करून योग्य भाशेंत पर्याय निवडात आनी फुडें वचात. सगळे बकवास, तत्सम आनी गडबड प्रतिसाद दिल्यार प्रतिवादी सरळ अपात्र थारतले.",
+        "answer": "हय, म्हाका भास खबर आसा आनी वांटो घेवपाक मान्य आसा"
+    },
+    "mai" : {
+        "question": "कृपया ध्यान राखब: एहि सर्वेक्षण मे केवल \"भाषा\" मे प्रतिक्रिया चाही। जँ अहाँ एहि भाषा सँ नीक जकाँ परिचित छी तखन कृपया सही भाषा मे विकल्प चुनू आ आगू बढ़ू | सबटा बकवास, समान आ बकवास प्रतिक्रिया स प्रतिवादी कए सीधा अयोग्य बना देल जाएत।",
+        "answer": "हँ, भाषा जनैत छी आ भाग लेबय लेल सहमत छी"
+    },
+    "ori" : {
+        "question": "ଦୟାକରି ଧ୍ୟାନ ଦିଅନ୍ତୁ: ଏହି ସର୍ଭେ କେବଳ \"ଭାଷା\" ରେ ପ୍ରତିକ୍ରିୟା ଆବଶ୍ୟକ କରେ | ଯଦି ଆପଣ ଏହି ଭାଷା ସହିତ ଭଲଭାବେ ଜାଣିଛନ୍ତି ତେବେ ଦୟାକରି ସଠିକ୍ ଭାଷାରେ ବିକଳ୍ପ ଚୟନ କରନ୍ତୁ ଏବଂ ଅଗ୍ରଗତି କରନ୍ତୁ | ସମସ୍ତ ନିର୍ବୋଧ, ସମାନ ଏବଂ ଜବରଦସ୍ତ ପ୍ରତିକ୍ରିୟା ଉତ୍ତରଦାତାଙ୍କୁ ସିଧାସଳଖ ଅଯୋଗ୍ୟତା ଆଣିବ |",
+        "answer": "ହଁ, ମୁଁ ଭାଷା ଜାଣେ ଏବଂ ଏଥିରେ ଭାଗ ନେବାକୁ ରାଜି ଅଟେ |"
+    },
+    "sat" : {
+        "question": "Note: Noa survey re eken \"pạrsi\" te roṛ ruạṛ jạruṛa. Judi am noa pạrsi te bhage te bam baḍae kan khan thik pạrsi te option bachao kate laha idi me. Jo̠to̠ nonsense, mit́ leka ar gibberish reaḱ ro̠ṛ ruạṛ do̠ jạruṛaḱ khon so̠do̠r ho̠ṛaḱ ạidạri (disqualification) reaḱ ạt ńam hoyoḱa.",
+        "answer": "Haan, iń do̠ pạrsiń baḍaea ar ona re selet́ lạgit́ iń aṅgoceda"
+    },
+    "sot" : {
+        "question": "Ka kopo hlokomela: Tlhahlobo ena e hloka karabo feela ka \"puo\". Haeba u tseba puo ena hantle, ka kopo khetha khetho ka puo e nepahetseng ebe u tsoela pele. Likarabo tsohle tse se nang thuso, tse tšoanang le tse sa utloahaleng li tla lebisa ho se tšoaneleheng ha moqosuoa.",
+        "answer": "Ee, ke tseba puo mme ke dumela ho nka karolo"
+    },
+    "chn" : {
+        "question": "请注意：此调查仅需要使用“语言”进行回答。如果您精通该语言，请选择正确语言的选项并继续。所有无意义、类似和胡言乱语的回答都将导致受访者直接被取消资格。",
+        "answer": "是的，我懂该语言并同意参与"
+    },
+    "yue" : {
+        "question": "請注意：呢個調查只需要用「語言」回應。如果你熟悉呢種語言，請選擇正確語言嘅選項，然後繼續。所有廢話、類似同廢話嘅回應都會導致受訪者直接被取消資格。",
+        "answer": "係呀，我識語言，同意參加"
+    },
+    "ph" : {
+        "question": "Pakitandaan: Ang survey na ito ay nangangailangan lamang ng tugon sa \"wika\". Kung bihasa ka sa wikang ito, mangyaring pumili ng opsyon sa tamang wika at magpatuloy. Ang lahat ng walang kapararakan, katulad at walang kwentang tugon ay hahantong sa tuwid na diskwalipikasyon ng respondent.",
+        "answer": "Oo, alam ko ang wika at sumasang-ayon akong lumahok"
+    },
+    "ct" : {
+        "question": "請注意：本調查僅需以「語言」回覆。如果您精通該語言，請選擇正確語言的選項並繼續。所有胡言亂語、類似和胡言亂語的回答將導致直接取消回答者的資格。",
+        "answer": "是的，我懂該語言並同意參加"
+    }
+}

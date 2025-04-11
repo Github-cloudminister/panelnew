@@ -1,0 +1,116 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.banner {
+    /*background: url('/static/images/survey_back.jpeg');*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+h3 {
+    text-transform: capitalize;
+    color: #ffffff;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 400;
+}
+.question{
+    min-width: 70%;
+}
+
+.question_text {
+    text-transform: capitalize;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: left;
+    font-weight: 400;
+    padding: 10px 10px;
+}
+
+.answeroptions{
+    padding: 5px 5px;
+    color: #ffffff;
+    text-align:left;
+}
+.banner>div {
+    padding: 1em 3em 3em;
+    /* background: #525252b8; */
+    background: #474747;
+    border-radius: 15px;
+    box-shadow: 0px 0px 8px 0px #060959;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 30px;
+}
+
+.banner>div:hover {
+    background: #000000b8;
+    transition: 0.5s ease-in;
+}
+
+.sub-head {
+    color: #55ec76;
+}
+.next_button{
+    text-align: right;
+}
+.next-button {
+    background-color: #ffffff;
+    padding: 8px 22px;
+    min-width: 100px;
+    border-radius: 10px;
+    color: #454545;
+    text-decoration: none;
+    margin: 10px;
+    transition: 0.2s ease-in;
+}
+
+.next-button:hover {
+    color: rgba(255, 255, 255, 0.89);
+    background-color: #55ec76;
+}
+
+@media (max-width:767px) {
+    .banner>div {
+        padding: 1em 2em;
+        margin: 5em;
+    }
+    h3 {
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
+
+
+/********** Survey entry sv_call_page progress bar loader *************/
+.progress {
+    background: rgba(150,150,150,0.1);
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0 5px;
+    display: flex;
+    height: 40px;
+    width: 500px;
+  }
+  
+  .progress-value {
+    animation: load 5s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+    background: #55EC76;
+    height: 30px;
+    width: 0;
+  }
+  
+  @keyframes load {
+    0% { width: 0; }
+    100% { width: 100%; }
+  }

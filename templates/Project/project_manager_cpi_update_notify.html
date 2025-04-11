@@ -1,0 +1,84 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office"
+	xmlns:v="urn:schemas-microsoft-com:vml">
+
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<meta content="width=device-width" name="viewport" />
+	<meta content="IE=edge" http-equiv="X-UA-Compatible" />
+	<title></title>
+	<style type="text/css">
+		body {
+			margin: 0;
+			padding: 0;
+		}
+
+		table,
+		th,
+		td,
+		tr {
+			vertical-align: top;
+			border: 1px solid black;;
+			border-collapse: collapse;
+		}
+
+		* {
+			line-height: inherit;
+		}
+
+		a[x-apple-data-detectors=true] {
+			color: inherit !important;
+			text-decoration: none !important;
+		}
+	</style>
+</head>
+
+<body class="clean-body" style="margin: 0; padding: 0; background-color: #FFFFFF;">
+	
+	<div>
+		<p>
+			Hi Team,
+		</p>
+		<p>
+			We found some issue with Supplier CPI in Project Number: {{project_number}}.
+		</p>
+		<p>
+			Please click on the link provided below to check and update the CPI. Once done, please reply on this email with screen shot for the confirmation. 
+		</p>
+		<table style="text-align: center;">
+			<thead>
+				<tr>
+					<th colspan="9" style="color:#555555;direction:ltr;font-family:Arial, Helvetica Neue, Helvetica, sans-serif;padding-bottom: 0px; padding-top: 0px;">
+						<h1 style="margin-bottom: 0px; margin-top: 0px;">Supplier CPI issue</h1>
+					</th>
+				</tr>
+				<tr>
+					<th>Supplier Name</th>
+					<th>Survey Number</th>
+					<th>Client CPI</th>
+					<th>Supplier CPI</th>
+					<th>Total Completes</th>
+				</tr>
+			</thead>
+			<tbody>
+				{% for data in supplierdata %}
+				<tr>
+					<td>{{data.supplier_name}}</td>
+					<td>{{data.project_group_number}}</td>
+					<td>{{data.client_cpi}}</td>
+					<td>{{data.supplier_cpii}}</td>
+					<td>{{data.total_completes}}</td>
+				</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+		<p>
+			<a href="{{projecturl}}">Click Here</a>
+		</p>
+	</div>
+								
+</body>
+
+</html>
