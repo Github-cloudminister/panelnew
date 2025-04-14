@@ -188,22 +188,14 @@ settingsvariables = {
         'CELERY_BROKER_URL' : 'redis://192.168.153.48:6379',
         'dbdefault': {
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': 'defaultdb',
-            'USER': 'akmadmin',
-            'PASSWORD': 'AVNS_s8eoy6y-vRb4FJ1kM34',
-            'HOST': 'a269046-akamai-prod-5563659-default.g2a.akamaidb.net',
-            'PORT': '20107',
-            'CONN_MAX_AGE': 30
-        },
-        'read': {
-            'ENGINE': 'django.db.backends.postgresql',
-            'NAME': 'defaultdb',
-            'USER': 'akmadmin',
-            'PASSWORD': 'AVNS_s8eoy6y-vRb4FJ1kM34',
-            'HOST': 'replica-a269046-akamai-prod-5563659-default.g2a.akamaidb.net',
-            'PORT': '20107',
+            'NAME': 'panelview',
+            'USER': 'postgres',
+            'PASSWORD': 'Uw50Q2wKUVlF23MDp0s0',
+            'HOST': '172.236.234.128',
+            'PORT': '5432',
             'CONN_MAX_AGE': 30
         }
+       
     }
 }
 
