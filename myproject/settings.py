@@ -188,11 +188,11 @@ settingsvariables = {
         'CELERY_BROKER_URL' : 'redis://192.168.153.48:6379',
         'dbdefault': {
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': 'panelview',
-            'USER': 'postgres',
-            'PASSWORD': 'Uw50Q2wKUVlF23MDp0s0',
-            'HOST': '172.236.234.128',
-            'PORT': '5432',
+            'NAME': 'panelviewtestdb',
+            'USER': 'paneluser',
+            'PASSWORD': 'Cloud@#54312',
+            'HOST': '172.105.39.43',
+            'PORT': '5000',
             'CONN_MAX_AGE': 30
         }
        
