@@ -301,7 +301,6 @@ AD_PANEL_DASHBOARD_FRONTEND_URL = settingsvariables[SERVER_TYPE]['AD_PANEL_DASHB
 
 DATABASES = {
     'default': settingsvariables[SERVER_TYPE]['dbdefault'],
-    'read': settingsvariables[SERVER_TYPE]['read'],
 }
 
 DATABASE_ROUTERS = ['myproject.database_router.MyDatabaseRouter']
