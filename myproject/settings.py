@@ -163,7 +163,7 @@ settingsvariables = {
         }
     },
     'production':{
-        'DEBUG':False,
+        'DEBUG':True,
         'CELERY':True,
         'APP_PATH' : '3Mj4eXMf565PoJ/api-route/',
         'SUPPLIER_DASHBOARD_AUTH_KEY' : 'SSBwysDq[F@sNVDTT5qbr~Z73-j)8zWa2c=',
