@@ -194,7 +194,16 @@ settingsvariables = {
             'HOST': '172.105.39.43',
             'PORT': '5000',
             'CONN_MAX_AGE': 30
-        }
+        },
+        'read': {
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'NAME': 'panelviewtestdb',
+            'USER': 'paneluser',
+            'PASSWORD': 'Cloud@#54312',
+            'HOST': '172.105.39.43',
+            'PORT': '5000',
+            'CONN_MAX_AGE': 30
+         }
        
     }
 }
@@ -301,6 +310,7 @@ AD_PANEL_DASHBOARD_FRONTEND_URL = settingsvariables[SERVER_TYPE]['AD_PANEL_DASHB
 
 DATABASES = {
     'default': settingsvariables[SERVER_TYPE]['dbdefault'],
+    'read': settingsvariables[SERVER_TYPE]['read'],
 }
 
 DATABASE_ROUTERS = ['myproject.database_router.MyDatabaseRouter']
