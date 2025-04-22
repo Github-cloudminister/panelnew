@@ -189,19 +189,19 @@ settingsvariables = {
         'dbdefault': {
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
             'NAME': 'panelviewtestdb',
-            'USER': 'paneluser',
-            'PASSWORD': 'Cloud@#54312',
-            'HOST': '172.105.39.43',
+            'USER': 'postgres',
+            'PASSWORD': '6D90KB5GF6WEaPvoSdrHuoFpqOhbBdM7',
+            'HOST': '172.105.52.147,172.105.52.162,172.105.52.43',
             'PORT': '5000',
             'CONN_MAX_AGE': 30
         },
         'read': {
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
             'NAME': 'panelviewtestdb',
-            'USER': 'paneluser',
-            'PASSWORD': 'Cloud@#54312',
-            'HOST': '172.105.39.43',
-            'PORT': '5000',
+            'USER': 'postgres',
+            'PASSWORD': '6D90KB5GF6WEaPvoSdrHuoFpqOhbBdM7',
+            'HOST': '172.105.52.147,172.105.52.162,172.105.52.43',
+            'PORT': '5001',
             'CONN_MAX_AGE': 30
          }
        
