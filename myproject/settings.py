@@ -189,7 +189,7 @@ settingsvariables = {
         'dbdefault': {
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
             'NAME': 'demodb',
-            'USER': 'surveydbuser',
+            'USER': 'avnadmin',
             'PASSWORD': 'AVNS_YfXDJn1UccC3QHYkb4G',
             'HOST': 'pg-26443522-pritamcloudminister-5ab4.b.aivencloud.com',
             'PORT': '19050',
@@ -198,7 +198,7 @@ settingsvariables = {
         'read': {
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
             'NAME': 'demodb',
-            'USER': 'surveydbuser',
+            'USER': 'avnadmin',
             'PASSWORD': 'AVNS_YfXDJn1UccC3QHYkb4G',
             'HOST': 'pg-26443522-pritamcloudminister-5ab4.b.aivencloud.com',
             'PORT': '19050',
