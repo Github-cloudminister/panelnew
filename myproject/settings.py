@@ -190,18 +190,18 @@ settingsvariables = {
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
             'NAME': 'demodb',
             'USER': 'surveydbuser',
-            'PASSWORD': '6D90KB5GF6WEaPvoSdrHuoFpqOhbBdM7',
-            'HOST': '172.105.52.147,172.105.52.162,172.105.52.43',
-            'PORT': '5000',
+            'PASSWORD': 'AVNS_YfXDJn1UccC3QHYkb4G',
+            'HOST': 'pg-26443522-pritamcloudminister-5ab4.b.aivencloud.com',
+            'PORT': '19050',
             'CONN_MAX_AGE': 30
         },
         'read': {
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
             'NAME': 'demodb',
             'USER': 'surveydbuser',
-            'PASSWORD': '6D90KB5GF6WEaPvoSdrHuoFpqOhbBdM7',
-            'HOST': '172.105.52.147,172.105.52.162,172.105.52.43',
-            'PORT': '5001',
+            'PASSWORD': 'AVNS_YfXDJn1UccC3QHYkb4G',
+            'HOST': 'pg-26443522-pritamcloudminister-5ab4.b.aivencloud.com',
+            'PORT': '19050',
             'CONN_MAX_AGE': 30
          }
        
